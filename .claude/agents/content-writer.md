@@ -134,6 +134,34 @@ Give one entry per box in figma.json that has no "repeat_of".
   buttons are in bold. No tables, types, word counts or "Replaces" notes.
   Text kept as designed is left out.
 
+## Legal pages (every site)
+Every site always needs a **Terms and Conditions** page and a **Privacy
+Policy** page. Write their full text in `sites/<domain>/legal.json` (the
+design's legal template is only the layout; build_doc.js adds both pages to
+the end of the document). Base them on the business model, and keep the
+wording unique (no 5-word runs from the design or other sites). The Terms
+must have, each under its own heading:
+- who the business is (legal name, registration number, address, email)
+- ordering, prices and currencies (matching the currency switcher)
+- **payment, with a billing descriptor line** ("Payments appear on your bank
+  or card statement as …")
+- the brief / what the customer must provide (service businesses)
+- **delivery** (how, when, what counts as delivered; for digital products,
+  "sent electronically after checkout"; for digital marketing, "starts
+  within 7 days" and "runs for 1, 3, 6 or 12 months")
+- revisions or changes, **cancellation**, **refunds** (how to ask, the
+  decision time, and how long the money takes)
+- ownership of the work, liability limits, complaints, **governing law**,
+  changes to the terms, and the last-updated date
+The Privacy Policy covers who we are, what is collected, why, who it's
+shared with, storage and transfers, retention, cookies, rights, security,
+children, governing (privacy) law and changes. Company details that aren't
+known yet (legal name, licence number, address, country, billing
+descriptor, retention years) are written as **TBC** and highlighted in the
+document, so they can be filled in with the company-details request later.
+Every fact must match the rest of the site (turnaround, rounds of changes,
+currencies, prices).
+
 ## Step 3: Check, fix, repeat
   python3 scripts/check_content.py sites/<domain>/content.json
 It fails if:

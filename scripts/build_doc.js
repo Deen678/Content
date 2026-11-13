@@ -56,6 +56,20 @@ for (const b of boxes) {
   const runs = []; lines.forEach((line, i) => { if (i) runs.push(new TextRun({ break: 1 })); runs.push(...runsFor(line, o)); });
   children.push(new Paragraph({ spacing: { after: 200 }, keepNext: b.role === 'heading', children: runs }));
 }
+// Full legal pages (sites/<domain>/legal.json), laid out with the design's legal template.
+const legalPath = path.join(dir, 'legal.json');
+if (fs.existsSync(legalPath) && (!pageArg || pageArg.startsWith('legal'))) {
+  const legal = JSON.parse(fs.readFileSync(legalPath, 'utf8'));
+  legal.pages.forEach((lp, i) => {
+    children.push(new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore: children.length > 3, children: [new TextRun(lp.title)] }));
+    if (i === 0 && legal.note) children.push(new Paragraph({ spacing: { after: 160 }, children: [t(legal.note, { color: MUTED, size: 18 })] }));
+    children.push(new Paragraph({ spacing: { after: 200 }, children: [t(lp.updated, { size: 21 })] }));
+    for (const [h, paras] of lp.sections) {
+      children.push(new Paragraph({ spacing: { before: 120, after: 100 }, keepNext: true, children: [t(h, { bold: true, size: 24 })] }));
+      for (const para of paras) children.push(new Paragraph({ spacing: { after: 160 }, children: para.split(/(TBC)/).map(seg => seg === 'TBC' ? new TextRun({ text: 'TBC', font: F, size: 21, bold: true, highlight: 'yellow' }) : t(seg, { size: 21 })) }));
+    }
+  });
+}
 const doc = new Document({
   styles: { default: { document: { run: { font: F, size: 20 } } }, paragraphStyles: [
     { id: 'Title', name: 'Title', basedOn: 'Normal', run: { font: F, size: 40, bold: true, color: NAVY }, paragraph: { spacing: { before: 0, after: 60 }, keepNext: true } },

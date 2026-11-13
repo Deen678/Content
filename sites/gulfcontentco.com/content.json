@@ -510,7 +510,9 @@
   },
   {
    "id": "12152:506",
-   "text": "One press release,\n*written two ways*"
+   "text": "A press release,\nbefore and after",
+   "keep": true,
+   "show": true
   },
   {
    "id": "12152:507",
@@ -708,6 +710,2206 @@
   {
    "id": "I12152:637;12152:100",
    "text": "We take",
+   "keep": true
+  },
+  {
+   "id": "12154:117",
+   "text": "Social media",
+   "keep": true
+  },
+  {
+   "id": "12154:118",
+   "text": "6 services",
+   "keep": true
+  },
+  {
+   "id": "12154:112",
+   "text": "Every service,\n*priced up front*"
+  },
+  {
+   "id": "12154:113",
+   "text": "Four categories of writing, each costed on what you choose: the length, grade, turnaround and quantity, plus any extra images. The total shows before you pay."
+  },
+  {
+   "id": "12154:123",
+   "text": "4 services",
+   "keep": true
+  },
+  {
+   "id": "12154:122",
+   "text": "Advertising",
+   "keep": true
+  },
+  {
+   "id": "12154:127",
+   "text": "Creative writing",
+   "keep": true
+  },
+  {
+   "id": "12154:132",
+   "text": "Corporate content",
+   "keep": true
+  },
+  {
+   "id": "12154:135",
+   "text": "Article content, press releases, CVs and resumes, cover letters, website policies and review writing.",
+   "keep": true
+  },
+  {
+   "id": "12222:5590",
+   "text": "Ordering, *page by page*"
+  },
+  {
+   "id": "12222:5591",
+   "text": "Each screen in order, from picking a piece to reading your draft."
+  },
+  {
+   "id": "12222:5594",
+   "text": "first",
+   "keep": true
+  },
+  {
+   "id": "12222:5595",
+   "text": "Shape the piece"
+  },
+  {
+   "id": "12222:5597",
+   "text": "Pick a service, then settle the length, grade, delivery speed, number of pieces and images, all on one screen."
+  },
+  {
+   "id": "12222:5599",
+   "text": "then",
+   "keep": true
+  },
+  {
+   "id": "12222:5600",
+   "text": "Brief the writer"
+  },
+  {
+   "id": "12222:5602",
+   "text": "Explain the subject, who will read it and how it should sound, or fill in the short brief. Upload any files that help."
+  },
+  {
+   "id": "12222:5604",
+   "text": "next",
+   "keep": true
+  },
+  {
+   "id": "12222:5605",
+   "text": "Check out securely"
+  },
+  {
+   "id": "12222:5607",
+   "text": "Create a free account, review your basket and pay through a secure checkout. Your card details never reach us."
+  },
+  {
+   "id": "12222:5609",
+   "text": "after",
+   "keep": true
+  },
+  {
+   "id": "12222:5610",
+   "text": "Review the draft"
+  },
+  {
+   "id": "12222:5612",
+   "text": "Your draft appears in your account. Mark it up and return it for changes. Every file and invoice is kept there permanently."
+  },
+  {
+   "id": "12154:185",
+   "text": "What goes into *the price*"
+  },
+  {
+   "id": "12154:186",
+   "text": "The same five choices apply to every service. Adjust any of them and the calculator updates the total."
+  },
+  {
+   "id": "12154:190",
+   "text": "Length",
+   "keep": true
+  },
+  {
+   "id": "12154:196",
+   "text": "Writer grade",
+   "keep": true
+  },
+  {
+   "id": "12154:202",
+   "text": "Turnaround",
+   "keep": true
+  },
+  {
+   "id": "12154:208",
+   "text": "Quantity",
+   "keep": true
+  },
+  {
+   "id": "12154:214",
+   "text": "Images",
+   "keep": true
+  },
+  {
+   "id": "12154:193",
+   "text": "How many words the piece needs. Enter any number between 20 and 10,000."
+  },
+  {
+   "id": "12154:199",
+   "text": "Standard costs the base price; Premium is +50% and Expert +120%."
+  },
+  {
+   "id": "12154:205",
+   "text": "Standard takes 5 to 7 days at no extra cost. Express takes 2 to 3 days, plus 25%."
+  },
+  {
+   "id": "12154:211",
+   "text": "The number of pieces of the same type. Every one is written from scratch."
+  },
+  {
+   "id": "12154:217",
+   "text": "Every piece includes one licensed image. Each extra image costs $3.87 per piece."
+  },
+  {
+   "id": "12154:141",
+   "text": "Categories,\n*each opening its own list*"
+  },
+  {
+   "id": "12154:142",
+   "text": "Choose the category closest to your brief. It opens to show its services, and each service uses the same calculator."
+  },
+  {
+   "id": "12154:148",
+   "text": "The papers people judge an organization by before they ever meet it."
+  },
+  {
+   "id": "12154:149",
+   "text": "Informative · Authoritative · Industry focused",
+   "keep": true
+  },
+  {
+   "id": "12154:150",
+   "text": "from $18",
+   "keep": true
+  },
+  {
+   "id": "I12154:151;12151:17",
+   "text": "View services",
+   "keep": true
+  },
+  {
+   "id": "12154:157",
+   "text": "Long reads that develop an idea, tell a story and hand a brand something to say."
+  },
+  {
+   "id": "12154:158",
+   "text": "Narrative · Distinctive · Voice led",
+   "keep": true
+  },
+  {
+   "id": "12154:166",
+   "text": "Copy that halts the scroll, wins the click and makes buying the easy choice."
+  },
+  {
+   "id": "12154:167",
+   "text": "Persuasive · Benefit led · Ready to convert",
+   "keep": true
+  },
+  {
+   "id": "12154:168",
+   "text": "from $26",
+   "keep": true
+  },
+  {
+   "id": "12154:175",
+   "text": "The steady daily posting that keeps a brand seen and worth following."
+  },
+  {
+   "id": "12154:176",
+   "text": "Engaging · Platform native · Audience aware",
+   "keep": true
+  },
+  {
+   "id": "12154:177",
+   "text": "from $20",
+   "keep": true
+  },
+  {
+   "id": "12313:5295",
+   "text": "Begin with *the goal*"
+  },
+  {
+   "id": "12313:5296",
+   "text": "Tell us what the copy has to achieve and we will match it to the right service."
+  },
+  {
+   "id": "12313:5299",
+   "text": "you want to",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12313:5300",
+   "text": "Share company news"
+  },
+  {
+   "id": "12313:5307",
+   "text": "Configure",
+   "keep": true
+  },
+  {
+   "id": "12313:5310",
+   "text": "Launch a new website"
+  },
+  {
+   "id": "12313:5320",
+   "text": "Rank higher in search"
+  },
+  {
+   "id": "12313:5304",
+   "text": "CORPORATE CONTENT",
+   "keep": true
+  },
+  {
+   "id": "12313:5305",
+   "text": "Press releases",
+   "keep": true
+  },
+  {
+   "id": "12313:5306",
+   "text": "from $44 per 500 words",
+   "keep": true
+  },
+  {
+   "id": "12313:5314",
+   "text": "ADVERTISING",
+   "keep": true
+  },
+  {
+   "id": "12313:5315",
+   "text": "Website content",
+   "keep": true
+  },
+  {
+   "id": "12313:5316",
+   "text": "from $44 per 250 words",
+   "keep": true
+  },
+  {
+   "id": "12313:5324",
+   "text": "CREATIVE WRITING",
+   "keep": true
+  },
+  {
+   "id": "12313:5325",
+   "text": "Blog writing",
+   "keep": true
+  },
+  {
+   "id": "12313:5326",
+   "text": "from $39 per 500 words",
+   "keep": true
+  },
+  {
+   "id": "12313:5330",
+   "text": "Get the interview"
+  },
+  {
+   "id": "12313:5340",
+   "text": "Post something every day"
+  },
+  {
+   "id": "12313:5350",
+   "text": "Make a product sell faster"
+  },
+  {
+   "id": "12313:5335",
+   "text": "CVs and resumes",
+   "keep": true
+  },
+  {
+   "id": "12313:5344",
+   "text": "SOCIAL MEDIA",
+   "keep": true
+  },
+  {
+   "id": "12313:5345",
+   "text": "Content calendars",
+   "keep": true
+  },
+  {
+   "id": "12313:5346",
+   "text": "from $20 per 500 words",
+   "keep": true
+  },
+  {
+   "id": "12313:5355",
+   "text": "Product descriptions",
+   "keep": true
+  },
+  {
+   "id": "12313:5356",
+   "text": "from $26 per 150 words",
+   "keep": true
+  },
+  {
+   "id": "12222:5616",
+   "text": "Questions, *answered straight*"
+  },
+  {
+   "id": "12222:5617",
+   "text": "Can't see yours? Ask us. You get a straight reply, even if that reply is no."
+  },
+  {
+   "id": "12222:5621",
+   "text": "Who will write it?"
+  },
+  {
+   "id": "12222:5623",
+   "text": "A writer who knows your sector and has an editing background, picked to suit your brief. An editor checks every piece before it reaches you."
+  },
+  {
+   "id": "12222:5625",
+   "text": "At what point do I brief?"
+  },
+  {
+   "id": "12222:5627",
+   "text": "Before checkout. Set up the piece, write your brief, then pay. Your writer begins as soon as the payment has cleared."
+  },
+  {
+   "id": "12222:5629",
+   "text": "How quickly will it arrive?"
+  },
+  {
+   "id": "12222:5631",
+   "text": "That depends on the turnaround you choose: 5 to 7 days as standard, or 2 to 3 days with Express."
+  },
+  {
+   "id": "12222:5634",
+   "text": "What happens if it misses the mark?"
+  },
+  {
+   "id": "12222:5636",
+   "text": "Two rounds of changes come with every piece. Send your notes through your account, and your original writer makes the edits."
+  },
+  {
+   "id": "12222:5638",
+   "text": "Is there a monthly plan?"
+  },
+  {
+   "id": "12222:5640",
+   "text": "No. Accounts are free and you pay for each piece. No retainers, no minimum spend and nothing that renews automatically."
+  },
+  {
+   "id": "12222:5642",
+   "text": "Do you write free test pieces?"
+  },
+  {
+   "id": "12222:5644",
+   "text": "No. Every piece is written to its own brief, so we don't write free samples. The copy across this site shows the standard you'll get."
+  },
+  {
+   "id": "12285:5459",
+   "text": "SERVICES  /  CORPORATE CONTENT",
+   "keep": true
+  },
+  {
+   "id": "12285:5461",
+   "text": "Every price here depends on three choices: length, writer grade and delivery time."
+  },
+  {
+   "id": "12284:5285",
+   "text": "in our words",
+   "keep": true
+  },
+  {
+   "id": "12284:5286",
+   "text": "About corporate content",
+   "keep": true
+  },
+  {
+   "id": "12284:5287",
+   "text": "Corporate content is writing with a job to do. Each format has a structure its readers expect, and copy that follows that structure is the copy that gets read."
+  },
+  {
+   "id": "12284:5288",
+   "text": "Below is a single press release, with notes on each part showing what our editors look for."
+  },
+  {
+   "id": "12284:5291",
+   "text": "FOR IMMEDIATE RELEASE",
+   "keep": true
+  },
+  {
+   "id": "12284:5292",
+   "text": "Harbour Logistics opens a second hub at Jebel Ali",
+   "keep": true
+  },
+  {
+   "id": "12284:5301",
+   "text": "the headline is the story, not the company",
+   "keep": true
+  },
+  {
+   "id": "12284:5293",
+   "text": "DUBAI, 19 October 2026. Harbour Logistics has opened a 12,000 square metre hub at Jebel Ali, doubling the freight it can turn around in a day.",
+   "keep": true
+  },
+  {
+   "id": "12284:5303",
+   "text": "who, what, where and why it matters, in one line",
+   "keep": true
+  },
+  {
+   "id": "12284:5294",
+   "text": "The hub runs around the clock and connects directly to the weekly Dammam sailings, cutting the wait between ship and truck to under four hours.",
+   "keep": true
+  },
+  {
+   "id": "12284:5305",
+   "text": "one useful detail a reporter can quote",
+   "keep": true
+  },
+  {
+   "id": "12284:5295",
+   "text": "“Our customers asked for one thing: fewer days sitting at the port. This hub is our answer,” said the managing director of Harbour Logistics.",
+   "keep": true
+  },
+  {
+   "id": "12284:5307",
+   "text": "a quote that adds something new",
+   "keep": true
+  },
+  {
+   "id": "12284:5309",
+   "text": "the line editors copy word for word",
+   "keep": true
+  },
+  {
+   "id": "12284:5297",
+   "text": "About Harbour Logistics. A freight forwarder moving cargo between the UAE and Saudi Arabia since 2009.",
+   "keep": true
+  },
+  {
+   "id": "12280:5218",
+   "text": "choose one",
+   "keep": true
+  },
+  {
+   "id": "12280:5219",
+   "text": "What *corporate content* covers"
+  },
+  {
+   "id": "12280:5222",
+   "text": "Service",
+   "keep": true
+  },
+  {
+   "id": "12280:5223",
+   "text": "What it is",
+   "keep": true
+  },
+  {
+   "id": "12280:5224",
+   "text": "Priced per",
+   "keep": true
+  },
+  {
+   "id": "12280:5225",
+   "text": "From",
+   "keep": true
+  },
+  {
+   "id": "12280:5226",
+   "text": "Order",
+   "keep": true
+  },
+  {
+   "id": "12280:5229",
+   "text": "In-depth, well organized articles that give your business a voice worth hearing, with interviews where they help."
+  },
+  {
+   "id": "12280:5228",
+   "text": "Article content",
+   "keep": true
+  },
+  {
+   "id": "12280:5231",
+   "text": "$44",
+   "keep": true
+  },
+  {
+   "id": "12280:5230",
+   "text": "500 words",
+   "keep": true
+  },
+  {
+   "id": "I12280:5233;12151:13",
+   "text": "Configure",
+   "keep": true
+  },
+  {
+   "id": "12280:5236",
+   "text": "News releases shaped for busy journalists, so they get opened and used."
+  },
+  {
+   "id": "12280:5243",
+   "text": "Work histories rewritten to show growth, skill and sound judgment."
+  },
+  {
+   "id": "12280:5250",
+   "text": "Letters that tie your experience to the job, in your own words."
+  },
+  {
+   "id": "12280:5249",
+   "text": "Cover letters",
+   "keep": true
+  },
+  {
+   "id": "12280:5251",
+   "text": "300 words",
+   "keep": true
+  },
+  {
+   "id": "12280:5257",
+   "text": "Terms, privacy notices and disclaimers in plain language that matches your brand."
+  },
+  {
+   "id": "12280:5256",
+   "text": "Website policies",
+   "keep": true
+  },
+  {
+   "id": "12280:5259",
+   "text": "$26",
+   "keep": true
+  },
+  {
+   "id": "12280:5264",
+   "text": "Honest, even-handed reviews of what you sell, written so readers trust them."
+  },
+  {
+   "id": "12280:5263",
+   "text": "Review writing",
+   "keep": true
+  },
+  {
+   "id": "12280:5265",
+   "text": "100 words",
+   "keep": true
+  },
+  {
+   "id": "12280:5266",
+   "text": "$18",
+   "keep": true
+  },
+  {
+   "id": "12280:5275",
+   "text": "one sentence, three grades",
+   "keep": true
+  },
+  {
+   "id": "12280:5276",
+   "text": "Find *your grade*"
+  },
+  {
+   "id": "12280:5277",
+   "text": "One line from a shipping brief, written at all three grades."
+  },
+  {
+   "id": "12282:5331",
+   "text": "adds 50%",
+   "keep": true
+  },
+  {
+   "id": "12282:5349",
+   "text": "adds 120%",
+   "keep": true
+  },
+  {
+   "id": "12282:5314",
+   "text": "Harbour Logistics moves freight between Jebel Ali and Dammam every week.\nGood for: review writing, cover letters, website policies",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12282:5332",
+   "text": "Harbour Logistics runs 40 sailings a month between Jebel Ali and Dammam, so a missed slot never costs you a week.\nGood for: press releases, article content",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12282:5350",
+   "text": "Harbour Logistics runs 40 sailings a month between Jebel Ali and Dammam, and 96% left on time in the second quarter of 2026.\nGood for: articles for specialist readers, technical policies",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12280:5309",
+   "text": "before you order",
+   "keep": true
+  },
+  {
+   "id": "12280:5310",
+   "text": "What to include in *your brief*"
+  },
+  {
+   "id": "12280:5311",
+   "text": "Three details that bring the first draft closer. Each takes about a minute on the brief form."
+  },
+  {
+   "id": "12280:5314",
+   "text": "Describe the reader"
+  },
+  {
+   "id": "12280:5316",
+   "text": "Tell us who will read it, whether a recruiter, a reporter or a regulator. The writer sets the tone and detail for that reader."
+  },
+  {
+   "id": "12280:5318",
+   "text": "Share existing material"
+  },
+  {
+   "id": "12280:5320",
+   "text": "Earlier drafts, a resume, an old policy or a product sheet. Upload them so the writer works from facts, not assumptions."
+  },
+  {
+   "id": "12281:5328",
+   "text": "MUST HAVE",
+   "keep": true
+  },
+  {
+   "id": "12280:5322",
+   "text": "List your fixed details"
+  },
+  {
+   "id": "12280:5324",
+   "text": "Names, numbers, required legal wording or your founder's exact quote. List them and they'll appear exactly as you supply them."
+  },
+  {
+   "id": "12280:5326",
+   "text": "Every order includes",
+   "keep": true
+  },
+  {
+   "id": "12280:5330",
+   "text": "Your brief kept with the order",
+   "keep": true
+  },
+  {
+   "id": "12280:5333",
+   "text": "Two rounds of changes",
+   "keep": true
+  },
+  {
+   "id": "12280:5336",
+   "text": "Files and invoice kept in your account",
+   "keep": true
+  },
+  {
+   "id": "12280:5339",
+   "text": "Paid once, nothing renews",
+   "keep": true
+  },
+  {
+   "id": "12293:5384",
+   "text": "SERVICES  /  CREATIVE WRITING",
+   "keep": true
+  },
+  {
+   "id": "12293:5396",
+   "text": "About creative writing",
+   "keep": true
+  },
+  {
+   "id": "12293:5397",
+   "text": "Creative writing covers the longer formats: e-books, blogs, white papers and scripts. These pieces develop an idea across pages, not lines, so the voice must stay steady from start to finish."
+  },
+  {
+   "id": "12293:5398",
+   "text": "Here's one blog post, annotated to show what an editor checks for as they read it."
+  },
+  {
+   "id": "12293:5401",
+   "text": "BLOG POST  ·  1,200 WORDS",
+   "keep": true
+  },
+  {
+   "id": "12293:5402",
+   "text": "What a 4am bakery taught us about customers",
+   "keep": true
+  },
+  {
+   "id": "12293:5411",
+   "text": "a title that promises something specific",
+   "keep": true
+  },
+  {
+   "id": "12293:5403",
+   "text": "The bakery opened at four, because the fishermen did. Nobody wrote that in a strategy deck. Someone just noticed who was awake.",
+   "keep": true
+  },
+  {
+   "id": "12293:5413",
+   "text": "open on a scene, not a statement",
+   "keep": true
+  },
+  {
+   "id": "12293:5404",
+   "text": "Most businesses set their hours, their offers and their tone around themselves. The good ones start from the person at the door.",
+   "keep": true
+  },
+  {
+   "id": "12293:5415",
+   "text": "the idea, said plainly by the second paragraph",
+   "keep": true
+  },
+  {
+   "id": "12293:5405",
+   "text": "So we asked three Dubai shop owners when their best customers actually turn up.",
+   "keep": true
+  },
+  {
+   "id": "12293:5417",
+   "text": "a turn that pulls the reader on",
+   "keep": true
+  },
+  {
+   "id": "12293:5419",
+   "text": "tags and read time, so it can be found",
+   "keep": true
+  },
+  {
+   "id": "12293:5407",
+   "text": "Filed under customers and small business. A six minute read.",
+   "keep": true
+  },
+  {
+   "id": "12293:5423",
+   "text": "Our *creative writing* services"
+  },
+  {
+   "id": "12293:5433",
+   "text": "Posts that grow your standing in your field, built for search and worth reading to the end."
+  },
+  {
+   "id": "12293:5435",
+   "text": "$39",
+   "keep": true
+  },
+  {
+   "id": "12293:5440",
+   "text": "Your idea grown into a full book, one chapter at a time."
+  },
+  {
+   "id": "12293:5439",
+   "text": "E-book writing",
+   "keep": true
+  },
+  {
+   "id": "12293:5442",
+   "text": "$66",
+   "keep": true
+  },
+  {
+   "id": "12293:5441",
+   "text": "1,000 words",
+   "keep": true
+  },
+  {
+   "id": "12293:5446",
+   "text": "Script writing",
+   "keep": true
+  },
+  {
+   "id": "12293:5447",
+   "text": "Scripts for video, podcasts and live stages, written to be heard."
+  },
+  {
+   "id": "12293:5449",
+   "text": "$53",
+   "keep": true
+  },
+  {
+   "id": "12293:5454",
+   "text": "In-depth papers that make the case for you as your industry's expert."
+  },
+  {
+   "id": "12293:5453",
+   "text": "White papers",
+   "keep": true
+  },
+  {
+   "id": "12293:5456",
+   "text": "$20",
+   "keep": true
+  },
+  {
+   "id": "12293:5461",
+   "text": "Posts and articles published under your name, in your voice."
+  },
+  {
+   "id": "12293:5460",
+   "text": "Ghostwriting",
+   "keep": true
+  },
+  {
+   "id": "12293:5468",
+   "text": "Technical writing in your sector's own terms, clear enough for buyers to follow."
+  },
+  {
+   "id": "12293:5467",
+   "text": "Tech writing",
+   "keep": true
+  },
+  {
+   "id": "12293:5482",
+   "text": "A single sentence from the bakery post, shown at every grade."
+  },
+  {
+   "id": "12293:5499",
+   "text": "The bakery opens at four in the morning because that is when the fishermen come in.\nGood for: blog writing, ghostwriting",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12293:5517",
+   "text": "The bakery opened at four, because the fishermen did.\nGood for: scripts, e-book chapters",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12293:5535",
+   "text": "The bakery opened at four, because the fishermen did, ever since the Deira fish market moved next door in 1994.\nGood for: white papers, tech writing",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12293:5546",
+   "text": "Name a tone you admire"
+  },
+  {
+   "id": "12293:5548",
+   "text": "Send a link to a writer, blog or brand whose style you like. One good example says more than a page of adjectives."
+  },
+  {
+   "id": "12293:5551",
+   "text": "Tell us its main purpose"
+  },
+  {
+   "id": "12293:5553",
+   "text": "A blog that needs to rank, an e-book that gathers leads, a script for video. The goal decides the structure from line one."
+  },
+  {
+   "id": "12293:5556",
+   "text": "List what we should avoid"
+  },
+  {
+   "id": "12293:5558",
+   "text": "Banned words, competitors we shouldn't name, any subjects to skip. Flag them up front and they never reach a revision."
+  },
+  {
+   "id": "12294:5533",
+   "text": "SERVICES  /  ADVERTISING",
+   "keep": true
+  },
+  {
+   "id": "12294:5545",
+   "text": "About advertising",
+   "keep": true
+  },
+  {
+   "id": "12294:5546",
+   "text": "Advertising copy exists so the next step feels like the natural one. That means each piece carries a single idea, in words chosen for the reader, not for the brand behind them."
+  },
+  {
+   "id": "12294:5547",
+   "text": "This is one product page, with an editor's notes explaining why every line earns its place."
+  },
+  {
+   "id": "12294:5550",
+   "text": "PRODUCT PAGE  ·  COLD BREW KIT",
+   "keep": true
+  },
+  {
+   "id": "12294:5551",
+   "text": "Cold brew in eleven minutes. No cafe needed.",
+   "keep": true
+  },
+  {
+   "id": "12294:5560",
+   "text": "the benefit, in the headline",
+   "keep": true
+  },
+  {
+   "id": "12294:5552",
+   "text": "Pour, press, wait eleven minutes. The kit does the slow part, so your first cup is ready before the school run.",
+   "keep": true
+  },
+  {
+   "id": "12294:5562",
+   "text": "what it does, before what it is",
+   "keep": true
+  },
+  {
+   "id": "12294:5564",
+   "text": "three specifics a buyer can picture",
+   "keep": true
+  },
+  {
+   "id": "12294:5553",
+   "text": "Makes four cups at a time. Rinses clean in under a minute. Fits in the fridge door.",
+   "keep": true
+  },
+  {
+   "id": "12294:5566",
+   "text": "a reason to believe, stated plainly",
+   "keep": true
+  },
+  {
+   "id": "12294:5554",
+   "text": "One 250g bag makes a week of coffee for two.",
+   "keep": true
+  },
+  {
+   "id": "12294:5568",
+   "text": "price and the action, nothing in the way",
+   "keep": true
+  },
+  {
+   "id": "12294:5556",
+   "text": "AED 149, delivered across Dubai and Abu Dhabi.",
+   "keep": true
+  },
+  {
+   "id": "12294:5572",
+   "text": "What *advertising* covers"
+  },
+  {
+   "id": "12294:5582",
+   "text": "Campaign copy that centers on a single idea, clear before it tries to be clever."
+  },
+  {
+   "id": "12294:5581",
+   "text": "Marketing content",
+   "keep": true
+  },
+  {
+   "id": "12294:5589",
+   "text": "Pages that convert visitors into buyers, written to sound just like your brand."
+  },
+  {
+   "id": "12294:5590",
+   "text": "250 words",
+   "keep": true
+  },
+  {
+   "id": "12294:5596",
+   "text": "Short lines people remember and repeat, delivered with the reasoning behind each one."
+  },
+  {
+   "id": "12294:5595",
+   "text": "Tagline and slogan",
+   "keep": true
+  },
+  {
+   "id": "12294:5597",
+   "text": "50 words",
+   "keep": true
+  },
+  {
+   "id": "12294:5598",
+   "text": "$55",
+   "keep": true
+  },
+  {
+   "id": "12294:5603",
+   "text": "Vivid, specific copy that turns browsing into buying."
+  },
+  {
+   "id": "12294:5604",
+   "text": "150 words",
+   "keep": true
+  },
+  {
+   "id": "12294:5631",
+   "text": "One line from the cold brew page, shown at each grade."
+  },
+  {
+   "id": "12294:5648",
+   "text": "Our cold brew kit makes coffee at home in eleven minutes.\nGood for: product descriptions",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12294:5666",
+   "text": "Cold brew in eleven minutes. No cafe needed.\nGood for: marketing content, website content",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12294:5684",
+   "text": "Cold brew in eleven minutes. No cafe, no queue, no special beans.\nGood for: tagline and slogan",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12294:5695",
+   "text": "Open with your offer"
+  },
+  {
+   "id": "12294:5697",
+   "text": "The product, its price if that matters, and the single thing that sets it apart. Every line of copy builds from there."
+  },
+  {
+   "id": "12294:5700",
+   "text": "Tell us the placement"
+  },
+  {
+   "id": "12294:5702",
+   "text": "A billboard, a product grid or a landing page. The space available decides how many words each line can hold."
+  },
+  {
+   "id": "12294:5705",
+   "text": "Name the one action"
+  },
+  {
+   "id": "12294:5707",
+   "text": "Buy, book, register or call. Each piece asks for one action, so every reader is pointed the same way."
+  },
+  {
+   "id": "12294:6200",
+   "text": "SERVICES  /  SOCIAL MEDIA",
+   "keep": true
+  },
+  {
+   "id": "12294:6212",
+   "text": "About social media",
+   "keep": true
+  },
+  {
+   "id": "12294:6213",
+   "text": "Social copy gets written every day and read in a moment. It needs to sound human, suit the platform and still give people a reason to stop."
+  },
+  {
+   "id": "12294:6214",
+   "text": "Below is a single launch post, with notes on the job each line is doing."
+  },
+  {
+   "id": "12294:6217",
+   "text": "INSTAGRAM POST  ·  LAUNCH",
+   "keep": true
+  },
+  {
+   "id": "12294:6218",
+   "text": "New menu Thursday. Three dishes, one rule: no truffle.",
+   "keep": true
+  },
+  {
+   "id": "12294:6227",
+   "text": "the hook, before anyone scrolls",
+   "keep": true
+  },
+  {
+   "id": "12294:6219",
+   "text": "We spent the summer cooking for our own team first. These three made the cut.",
+   "keep": true
+  },
+  {
+   "id": "12294:6229",
+   "text": "a reason to care, in one line",
+   "keep": true
+  },
+  {
+   "id": "12294:6220",
+   "text": "Grilled hammour with lime butter. Lamb that falls off the bone. A date pudding we will not apologise for.",
+   "keep": true
+  },
+  {
+   "id": "12294:6231",
+   "text": "specifics the feed can taste",
+   "keep": true
+  },
+  {
+   "id": "12294:6221",
+   "text": "Book a table for Thursday, link in bio. The first fifty get the pudding on us.",
+   "keep": true
+  },
+  {
+   "id": "12294:6233",
+   "text": "one action, said once",
+   "keep": true
+  },
+  {
+   "id": "12294:6235",
+   "text": "hashtags people actually search",
+   "keep": true
+  },
+  {
+   "id": "12294:6223",
+   "text": "#DubaiEats  #NewMenu  #NoTruffle",
+   "keep": true
+  },
+  {
+   "id": "12294:6239",
+   "text": "Every *social media* service"
+  },
+  {
+   "id": "12294:6249",
+   "text": "Posts shaped for the platform they appear on, written in your voice."
+  },
+  {
+   "id": "12294:6248",
+   "text": "Captions and posts",
+   "keep": true
+  },
+  {
+   "id": "12294:6256",
+   "text": "A month of posts, themes and dates mapped out, ready to schedule."
+  },
+  {
+   "id": "12294:6263",
+   "text": "One campaign idea carried through every line, across all of your channels."
+  },
+  {
+   "id": "12294:6262",
+   "text": "Campaign copy",
+   "keep": true
+  },
+  {
+   "id": "12294:6270",
+   "text": "Social ad versions written to compete against each other in tests."
+  },
+  {
+   "id": "12294:6269",
+   "text": "Ad copy",
+   "keep": true
+  },
+  {
+   "id": "12294:6277",
+   "text": "Shot by shot scripts for short videos and stories."
+  },
+  {
+   "id": "12294:6276",
+   "text": "Story scripts",
+   "keep": true
+  },
+  {
+   "id": "12294:6279",
+   "text": "$69",
+   "keep": true
+  },
+  {
+   "id": "12294:6284",
+   "text": "Your bio, link page and pinned post, all written to work together."
+  },
+  {
+   "id": "12294:6283",
+   "text": "Profile and bio copy",
+   "keep": true
+  },
+  {
+   "id": "12294:6298",
+   "text": "One sentence from the menu launch, written at every grade."
+  },
+  {
+   "id": "12294:6315",
+   "text": "Our new menu launches on Thursday with three new dishes.\nGood for: captions and posts, content calendars",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12294:6333",
+   "text": "New menu Thursday. Three dishes, one rule: no truffle.\nGood for: campaign copy, ad copy",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12294:6351",
+   "text": "New menu Thursday. Three dishes, one rule: no truffle. The first fifty bookings get pudding on us.\nGood for: story scripts, profile and bio copy",
+   "keep": true,
+   "show": true
+  },
+  {
+   "id": "12294:6362",
+   "text": "List your channels"
+  },
+  {
+   "id": "12294:6364",
+   "text": "TikTok, Instagram, LinkedIn or X. Each gets its own length, pace and hashtags, written to suit that feed."
+  },
+  {
+   "id": "12294:6367",
+   "text": "Share key dates"
+  },
+  {
+   "id": "12294:6369",
+   "text": "Launches, events and this month's key dates. Your writer then plans each post around them instead of guessing."
+  },
+  {
+   "id": "12294:6372",
+   "text": "Link your recent posts"
+  },
+  {
+   "id": "12294:6374",
+   "text": "Share some posts that performed and some that didn't. Comparing them is the fastest route to the voice that suits you."
+  },
+  {
+   "id": "12297:5210",
+   "text": "A note on how we started",
+   "keep": true
+  },
+  {
+   "id": "12297:5212",
+   "text": "Much of the copy in this region gets written twice: first badly, then again under pressure."
+  },
+  {
+   "id": "12297:5213",
+   "text": "Gulf Content Co. exists to get it right first time."
+  },
+  {
+   "id": "12297:5214",
+   "text": "So every piece has a specialist writer, an editor who pushes back, and a price you can see before work begins."
+  },
+  {
+   "id": "12297:5215",
+   "text": "the studio",
+   "keep": true
+  },
+  {
+   "id": "12297:5206",
+   "text": "why we exist",
+   "keep": true
+  },
+  {
+   "id": "12297:5207",
+   "text": "Our story",
+   "keep": true
+  },
+  {
+   "id": "12297:5208",
+   "text": "A small Gulf studio that takes on fewer pieces and does them better. Each one passes through a subject specialist and an editor who trims it hard."
+  },
+  {
+   "id": "12297:5221",
+   "text": "Three people read it\n*before you ever do*"
+  },
+  {
+   "id": "12297:5222",
+   "text": "Each reader looks for something else entirely."
+  },
+  {
+   "id": "12297:5225",
+   "text": "First reading",
+   "keep": true
+  },
+  {
+   "id": "12297:5226",
+   "text": "The writer",
+   "keep": true
+  },
+  {
+   "id": "12297:5228",
+   "text": "Works from your brief, reads the draft aloud and cuts lines that sound like adverts."
+  },
+  {
+   "id": "12297:5229",
+   "text": "reads for voice",
+   "keep": true
+  },
+  {
+   "id": "12297:5231",
+   "text": "Second reading",
+   "keep": true
+  },
+  {
+   "id": "12297:5232",
+   "text": "The editor",
+   "keep": true
+  },
+  {
+   "id": "12297:5234",
+   "text": "Reads it without the brief to hand, removing anything that exists only to fill room."
+  },
+  {
+   "id": "12297:5235",
+   "text": "reads for waste",
+   "keep": true
+  },
+  {
+   "id": "12297:5237",
+   "text": "Third reading",
+   "keep": true
+  },
+  {
+   "id": "12297:5238",
+   "text": "The checker",
+   "keep": true
+  },
+  {
+   "id": "12297:5240",
+   "text": "Verifies each name, number and claim at the source before any draft goes out."
+  },
+  {
+   "id": "12297:5241",
+   "text": "reads for facts",
+   "keep": true
+  },
+  {
+   "id": "12309:5733",
+   "text": "the bench",
+   "keep": true
+  },
+  {
+   "id": "12309:5734",
+   "text": "Specialists by *industry*"
+  },
+  {
+   "id": "12309:5735",
+   "text": "Every brief goes to a writer with hands-on experience in that field, so they already speak the language your readers use."
+  },
+  {
+   "id": "12309:5737",
+   "text": "CONTENTS",
+   "keep": true
+  },
+  {
+   "id": "12309:5738",
+   "text": "SECTOR",
+   "keep": true
+  },
+  {
+   "id": "12309:5740",
+   "text": "01",
+   "keep": true
+  },
+  {
+   "id": "12309:5743",
+   "text": "Logistics and trade",
+   "keep": true
+  },
+  {
+   "id": "12309:5745",
+   "text": "p. 04",
+   "keep": true
+  },
+  {
+   "id": "12309:5746",
+   "text": "Shipping, freight, customs and the teams behind them."
+  },
+  {
+   "id": "12309:5748",
+   "text": "02",
+   "keep": true
+  },
+  {
+   "id": "12309:5751",
+   "text": "Finance and fintech",
+   "keep": true
+  },
+  {
+   "id": "12309:5753",
+   "text": "p. 16",
+   "keep": true
+  },
+  {
+   "id": "12309:5754",
+   "text": "Banks, payments and the rules governing them."
+  },
+  {
+   "id": "12309:5756",
+   "text": "03",
+   "keep": true
+  },
+  {
+   "id": "12309:5759",
+   "text": "Health and clinics",
+   "keep": true
+  },
+  {
+   "id": "12309:5761",
+   "text": "p. 28",
+   "keep": true
+  },
+  {
+   "id": "12309:5762",
+   "text": "Patient information that is clear and still warm."
+  },
+  {
+   "id": "12309:5764",
+   "text": "04",
+   "keep": true
+  },
+  {
+   "id": "12309:5767",
+   "text": "Property",
+   "keep": true
+  },
+  {
+   "id": "12309:5769",
+   "text": "p. 40",
+   "keep": true
+  },
+  {
+   "id": "12309:5770",
+   "text": "New developments, rentals and how the market talks."
+  },
+  {
+   "id": "12309:5772",
+   "text": "05",
+   "keep": true
+  },
+  {
+   "id": "12309:5775",
+   "text": "Hospitality",
+   "keep": true
+  },
+  {
+   "id": "12309:5777",
+   "text": "p. 52",
+   "keep": true
+  },
+  {
+   "id": "12309:5778",
+   "text": "Hotels, cafes, restaurants and every menu between."
+  },
+  {
+   "id": "12309:5780",
+   "text": "06",
+   "keep": true
+  },
+  {
+   "id": "12309:5783",
+   "text": "Technology",
+   "keep": true
+  },
+  {
+   "id": "12309:5785",
+   "text": "p. 64",
+   "keep": true
+  },
+  {
+   "id": "12309:5786",
+   "text": "Software, SaaS and any product that needs explaining."
+  },
+  {
+   "id": "12297:5272",
+   "text": "our style sheet",
+   "keep": true
+  },
+  {
+   "id": "12297:5273",
+   "text": "Our *house rules*"
+  },
+  {
+   "id": "12297:5274",
+   "text": "The rules each writer receives on their first day. Most are about what to leave out."
+  },
+  {
+   "id": "12297:5309",
+   "text": "Approved",
+   "keep": true
+  },
+  {
+   "id": "12297:5277",
+   "text": "Say what it does",
+   "keep": true
+  },
+  {
+   "id": "12297:5279",
+   "text": "leverages innovative solutions",
+   "keep": true
+  },
+  {
+   "id": "12297:5280",
+   "text": "runs payroll for clinics",
+   "keep": true
+  },
+  {
+   "id": "12297:5282",
+   "text": "One idea per piece",
+   "keep": true
+  },
+  {
+   "id": "12297:5284",
+   "text": "fast, cheap, premium and local",
+   "keep": true
+  },
+  {
+   "id": "12297:5285",
+   "text": "the fastest in Manama",
+   "keep": true
+  },
+  {
+   "id": "12297:5287",
+   "text": "Numbers beat adjectives",
+   "keep": true
+  },
+  {
+   "id": "12297:5289",
+   "text": "huge growth",
+   "keep": true
+  },
+  {
+   "id": "12297:5290",
+   "text": "up 40% in a year",
+   "keep": true
+  },
+  {
+   "id": "12297:5292",
+   "text": "Write for one reader",
+   "keep": true
+  },
+  {
+   "id": "12297:5294",
+   "text": "all stakeholders",
+   "keep": true
+  },
+  {
+   "id": "12297:5295",
+   "text": "your finance director",
+   "keep": true
+  },
+  {
+   "id": "12297:5297",
+   "text": "Cut the warm up",
+   "keep": true
+  },
+  {
+   "id": "12297:5299",
+   "text": "In today’s fast paced world,",
+   "keep": true
+  },
+  {
+   "id": "12297:5300",
+   "text": "Ports close at six.",
+   "keep": true
+  },
+  {
+   "id": "12297:5302",
+   "text": "End on the next step",
+   "keep": true
+  },
+  {
+   "id": "12297:5304",
+   "text": "Thank you for reading!",
+   "keep": true
+  },
+  {
+   "id": "12297:5305",
+   "text": "Book a site visit.",
+   "keep": true
+  },
+  {
+   "id": "12297:5313",
+   "text": "saying no is part of the job",
+   "keep": true
+  },
+  {
+   "id": "12297:5314",
+   "text": "Briefs we *politely decline*"
+  },
+  {
+   "id": "12297:5315",
+   "text": "Some briefs get a courteous no from us. Declining these is what keeps the rest of our work strong."
+  },
+  {
+   "id": "12299:5277",
+   "text": "BRIEF RECEIVED",
+   "keep": true
+  },
+  {
+   "id": "12299:5278",
+   "text": "Fifty blog posts a month",
+   "keep": true
+  },
+  {
+   "id": "12299:5279",
+   "text": "for search engines only",
+   "keep": true
+  },
+  {
+   "id": "12299:5281",
+   "text": "No one reads them, so no one remembers you. Four shareable posts will do more."
+  },
+  {
+   "id": "12299:5283",
+   "text": "Declined",
+   "keep": true
+  },
+  {
+   "id": "12299:5286",
+   "text": "A press release",
+   "keep": true
+  },
+  {
+   "id": "12299:5287",
+   "text": "with no news in it",
+   "keep": true
+  },
+  {
+   "id": "12299:5289",
+   "text": "Reporters learn to ignore your emails. Hold on until there's real news, and we'll write it."
+  },
+  {
+   "id": "12299:5294",
+   "text": "Claims you cannot prove",
+   "keep": true
+  },
+  {
+   "id": "12299:5295",
+   "text": "the best, the first, the only",
+   "keep": true
+  },
+  {
+   "id": "12299:5297",
+   "text": "We only write what we can verify. Send us the figure behind the claim and we'll make it count."
+  },
+  {
+   "id": "12299:5302",
+   "text": "A CV with a job",
+   "keep": true
+  },
+  {
+   "id": "12299:5303",
+   "text": "that never happened",
+   "keep": true
+  },
+  {
+   "id": "12299:5305",
+   "text": "We'll present the job you really did at its best, but we won't invent one you never held."
+  },
+  {
+   "id": "12299:5314",
+   "text": "In today’s fast paced world,",
+   "keep": true
+  },
+  {
+   "id": "12297:5338",
+   "text": "over to you",
+   "keep": true
+  },
+  {
+   "id": "12299:5310",
+   "text": "first draft back in",
+   "keep": true
+  },
+  {
+   "id": "12299:5311",
+   "text": "5 to 7 days",
+   "keep": true
+  },
+  {
+   "id": "12297:5339",
+   "text": "Give us that first draft\n*you have been putting off*"
+  },
+  {
+   "id": "12299:5308",
+   "text": "Explain what the piece needs to do and who it's for. A specialist in that format returns a first draft: Express takes 2 to 3 days, Standard 5 to 7. Two rounds of edits come included."
+  },
+  {
+   "id": "I12297:5341;12151:13",
+   "text": "See services",
+   "keep": true
+  },
+  {
+   "id": "I12297:5342;12151:17",
+   "text": "Contact us",
+   "keep": true
+  },
+  {
+   "id": "12299:5317",
+   "text": "Ready when you are",
+   "keep": true
+  },
+  {
+   "id": "12160:1589",
+   "text": "GCC",
+   "keep": true
+  },
+  {
+   "id": "12160:1583",
+   "text": "say it short",
+   "keep": true
+  },
+  {
+   "id": "12160:1584",
+   "text": "Contact us",
+   "keep": true
+  },
+  {
+   "id": "12160:1585",
+   "text": "Ask about a draft, an order or writing for us."
+  },
+  {
+   "id": "12160:1590",
+   "text": "Gulf Content Co.\nHello inbox",
+   "keep": true
+  },
+  {
+   "id": "12160:1594",
+   "text": "Write to us"
+  },
+  {
+   "id": "12160:1627",
+   "text": "Support email",
+   "keep": true
+  },
+  {
+   "id": "12160:1628",
+   "text": "hello@gulfcontentco.com",
+   "keep": true
+  },
+  {
+   "id": "12160:1630",
+   "text": "Phone",
+   "keep": true
+  },
+  {
+   "id": "12160:1631",
+   "text": "+971 4 000 0000, Sunday to Thursday, 9 to 6",
+   "keep": true
+  },
+  {
+   "id": "I12160:1605;12151:26",
+   "text": "Phone (optional)",
+   "keep": true
+  },
+  {
+   "id": "12160:1633",
+   "text": "Studio",
+   "keep": true
+  },
+  {
+   "id": "12160:1634",
+   "text": "Office 000, Business Bay, Dubai, UAE",
+   "keep": true
+  },
+  {
+   "id": "I12160:1609;12151:45",
+   "text": "I would like a quote for six product descriptions in English and Arabic.",
+   "keep": true
+  },
+  {
+   "id": "12160:1636",
+   "text": "Company",
+   "keep": true
+  },
+  {
+   "id": "12160:1637",
+   "text": "Gulf Content Co. L.L.C, licence no. 000000",
+   "keep": true
+  },
+  {
+   "id": "I12160:1623;12151:13",
+   "text": "Send message",
+   "keep": true
+  },
+  {
+   "id": "12171:2866",
+   "text": "before you write",
+   "keep": true
+  },
+  {
+   "id": "12171:2867",
+   "text": "Fast *answers*"
+  },
+  {
+   "id": "12171:2868",
+   "text": "Your account answers most questions about orders. Here's where to find things."
+  },
+  {
+   "id": "12171:2871",
+   "text": "Where's my draft now?"
+  },
+  {
+   "id": "12171:2872",
+   "text": "Inside your account, under that order, as soon as your editor releases it. Approved files are then saved under Downloads."
+  },
+  {
+   "id": "12171:2874",
+   "text": "How can I request some edits?"
+  },
+  {
+   "id": "12171:2875",
+   "text": "Reply to the draft's email or use your account's order page. Two rounds come included."
+  },
+  {
+   "id": "12171:2877",
+   "text": "Where do invoices live?"
+  },
+  {
+   "id": "12171:2878",
+   "text": "Find every invoice under the Invoices tab in your account to download."
+  },
+  {
+   "id": "12171:2880",
+   "text": "Can I edit my brief?"
+  },
+  {
+   "id": "12171:2881",
+   "text": "Yes, until the writer begins. Open the order and update your brief."
+  },
+  {
+   "id": "12160:1366",
+   "text": "Situations vacant",
+   "keep": true
+  },
+  {
+   "id": "12160:1367",
+   "text": "Writers who delete",
+   "keep": true
+  },
+  {
+   "id": "12160:1369",
+   "text": "Sector knowledge preferred. Comfortable with a red pen on your work.",
+   "keep": true
+  },
+  {
+   "id": "12160:1370",
+   "text": "apply below",
+   "keep": true
+  },
+  {
+   "id": "12160:1363",
+   "text": "Join us",
+   "keep": true
+  },
+  {
+   "id": "12160:1364",
+   "text": "Our writers are specialists, based across the Gulf and further afield. If you'd rather cut words than add them, you'll settle in quickly."
+  },
+  {
+   "id": "12160:1375",
+   "text": "Why writers *choose us*"
+  },
+  {
+   "id": "12160:1376",
+   "text": "What working with the studio is really like."
+  },
+  {
+   "id": "12160:1381",
+   "text": "Each brief comes priced and scoped, with the reader identified and sources attached. You begin writing straight away instead of waiting on email replies."
+  },
+  {
+   "id": "12160:1380",
+   "text": "Every brief, fully prepared"
+  },
+  {
+   "id": "12160:1385",
+   "text": "Before the client sees anything, an editor reviews your draft, sharpens what needs it and shares the notes with you. Your work is published at its best, under your name."
+  },
+  {
+   "id": "12160:1384",
+   "text": "An editor who backs you"
+  },
+  {
+   "id": "12160:1389",
+   "text": "You see the rate for each brief before you accept it, based on its grade and length. Payment is per piece, every month, with no chasing invoices and no haggling."
+  },
+  {
+   "id": "12160:1388",
+   "text": "Paid fairly, paid on time"
+  },
+  {
+   "id": "12171:2815",
+   "text": "Our writer test, *explained*"
+  },
+  {
+   "id": "12171:2816",
+   "text": "Each stage is brief, and none of it is unpaid work."
+  },
+  {
+   "id": "12171:2819",
+   "text": "Step one",
+   "keep": true
+  },
+  {
+   "id": "12171:2820",
+   "text": "Send samples"
+  },
+  {
+   "id": "12171:2822",
+   "text": "Share your sectors and two pieces you're proud of. They count whether they were published or not."
+  },
+  {
+   "id": "12171:2824",
+   "text": "Step two",
+   "keep": true
+  },
+  {
+   "id": "12171:2825",
+   "text": "Paid trial brief"
+  },
+  {
+   "id": "12171:2827",
+   "text": "A realistic client brief of around 500 words, paid at our Standard rate even if you don't join."
+  },
+  {
+   "id": "12171:2829",
+   "text": "Step three",
+   "keep": true
+  },
+  {
+   "id": "12171:2830",
+   "text": "Start taking briefs"
+  },
+  {
+   "id": "12171:2832",
+   "text": "Clear the edit to join our writer pool, and you'll see briefs in your sectors first."
+  },
+  {
+   "id": "12314:5186",
+   "text": "SITUATIONS VACANT  ·  WRITERS WANTED  ·  DUBAI",
+   "keep": true
+  },
+  {
+   "id": "12314:5189",
+   "text": "Who we're *looking for*"
+  },
+  {
+   "id": "12314:5192",
+   "text": "WANTED",
+   "keep": true
+  },
+  {
+   "id": "12314:5193",
+   "text": "You know the industry"
+  },
+  {
+   "id": "12314:5194",
+   "text": "Tech, property, finance, health, logistics or hospitality. You understand it deeply enough to catch a false claim ahead of the editor."
+  },
+  {
+   "id": "12314:5197",
+   "text": "You welcome a hard edit"
+  },
+  {
+   "id": "12314:5198",
+   "text": "Our editors cut deeply and return their notes quickly. The writers who like that part of the work tend to stay the longest."
+  },
+  {
+   "id": "12314:5201",
+   "text": "Your English is plain"
+  },
+  {
+   "id": "12314:5202",
+   "text": "Short sentences, strong verbs and nothing extra. Every writer here follows the same concise house style, starting with their very first job."
+  },
+  {
+   "id": "12314:5205",
+   "text": "You hit every deadline"
+  },
+  {
+   "id": "12314:5206",
+   "text": "Clients are promised a delivery date before you begin, so only agree to a deadline you know you can meet every time."
+  },
+  {
+   "id": "12160:1394",
+   "text": "Send your *application*"
+  },
+  {
+   "id": "12160:1395",
+   "text": "Share your strongest writing areas and the sectors you truly know. We read every application."
+  },
+  {
+   "id": "12315:5664",
+   "text": "WHAT HAPPENS NEXT",
+   "keep": true
+  },
+  {
+   "id": "I12160:1398;12151:26",
+   "text": "Full name",
+   "keep": true
+  },
+  {
+   "id": "I12160:1402;12151:26",
+   "text": "Email",
+   "keep": true
+  },
+  {
+   "id": "I12160:1398;12151:28",
+   "text": "John Smith",
+   "keep": true
+  },
+  {
+   "id": "I12160:1402;12151:28",
+   "text": "john@example.com",
+   "keep": true
+  },
+  {
+   "id": "I12160:1407;12151:26",
+   "text": "Phone",
+   "keep": true
+  },
+  {
+   "id": "I12160:1411;12151:26",
+   "text": "Available from",
+   "keep": true
+  },
+  {
+   "id": "I12160:1407;12151:28",
+   "text": "+971 50 123 4567",
+   "keep": true
+  },
+  {
+   "id": "I12160:1411;12151:28",
+   "text": "1 November 2026",
+   "keep": true
+  },
+  {
+   "id": "I12160:1416;12151:30",
+   "text": "Preferred voice",
+   "keep": true
+  },
+  {
+   "id": "I12160:1422;12151:26",
+   "text": "Sectors you know properly",
+   "keep": true
+  },
+  {
+   "id": "I12160:1416;12151:32",
+   "text": "Conversational",
+   "keep": true
+  },
+  {
+   "id": "I12160:1422;12151:28",
+   "text": "Logistics, fintech",
+   "keep": true
+  },
+  {
+   "id": "12315:5659",
+   "text": "The editors",
+   "keep": true
+  },
+  {
+   "id": "12315:5660",
+   "text": "Gulf Content Co.",
+   "keep": true
+  },
+  {
+   "id": "I12160:1426;12151:43",
+   "text": "Message",
+   "keep": true
+  },
+  {
+   "id": "I12160:1426;12151:45",
+   "text": "Eight years writing for freight and payments companies in Dubai and Abu Dhabi.",
+   "keep": true
+  },
+  {
+   "id": "12315:5667",
+   "text": "We review it and email you back."
+  },
+  {
+   "id": "12315:5666",
+   "text": "1",
+   "keep": true
+  },
+  {
+   "id": "12315:5670",
+   "text": "Then you complete a paid trial brief."
+  },
+  {
+   "id": "12315:5669",
+   "text": "2",
+   "keep": true
+  },
+  {
+   "id": "I12160:1431;12152:113",
+   "text": "I agree to the Terms and the Privacy policy.",
+   "keep": true
+  },
+  {
+   "id": "I12160:1434;12152:116",
+   "text": "I'm not a robot",
+   "keep": true
+  },
+  {
+   "id": "12315:5673",
+   "text": "An editor reviews it and returns notes."
+  },
+  {
+   "id": "12315:5672",
+   "text": "3",
+   "keep": true
+  },
+  {
+   "id": "I12160:1434;12152:119",
+   "text": "reCAPTCHA",
+   "keep": true
+  },
+  {
+   "id": "I12160:1440;12151:21",
+   "text": "Submit application",
+   "keep": true
+  },
+  {
+   "id": "12161:2166",
+   "text": "Terms and conditions",
+   "keep": true
+  },
+  {
+   "id": "12161:2167",
+   "text": "Last updated 15 October 2026",
+   "keep": true
+  },
+  {
+   "id": "12161:2170",
+   "text": "1. Who we are",
+   "keep": true
+  },
+  {
+   "id": "12161:2171",
+   "text": "Gulf Content Co. L.L.C writes copy to order through this website. These terms cover every order placed here.",
+   "keep": true
+  },
+  {
+   "id": "12161:2172",
+   "text": "2. Ordering and prices",
+   "keep": true
+  },
+  {
+   "id": "12161:2173",
+   "text": "The price for each piece is shown before you pay and is set by the length, writer grade, turnaround, quantity and images you choose. You pay once, at checkout.",
+   "keep": true
+  },
+  {
+   "id": "12161:2174",
+   "text": "3. Turnaround",
+   "keep": true
+  },
+  {
+   "id": "12161:2175",
+   "text": "Turnaround starts once payment clears. Standard is 5 to 7 days and Express is 2 to 3 days. You agree to send a complete brief so we can start.",
+   "keep": true
+  },
+  {
+   "id": "12161:2176",
+   "text": "4. Changes",
+   "keep": true
+  },
+  {
+   "id": "12161:2177",
+   "text": "Two rounds of changes are included with every piece, made within the scope of the original brief.",
+   "keep": true
+  },
+  {
+   "id": "12161:2178",
+   "text": "5. Ownership",
+   "keep": true
+  },
+  {
+   "id": "12161:2179",
+   "text": "Once paid, the finished copy is yours to use, edit and publish as you see fit.",
+   "keep": true
+  },
+  {
+   "id": "12161:2180",
+   "text": "6. Your data",
+   "keep": true
+  },
+  {
+   "id": "12161:2181",
+   "text": "We use your details to deliver your order and nothing else. See the Privacy policy for the detail.",
    "keep": true
   }
  ]
