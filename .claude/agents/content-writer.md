@@ -82,8 +82,11 @@ Give one entry per box in figma.json that has no "repeat_of".
 - **Struck-out "before" text** that the design shows with a line through it:
   write it as `~~old words~~ new words`, keeping the design's numbers of old
   and new words.
-- **The document lists only what changes:** each box's new content, with the
-  current design text underneath as "Replaces: …". Kept text is left out.
+- **The document is plain reading copy:** page and section names, then each
+  piece of new text on its own line, in the order it appears on the page, so
+  the owner can read it and copy-paste it straight into Figma. Headings and
+  buttons are in bold. No tables, types, word counts or "Replaces" notes.
+  Text kept as designed is left out.
 
 ## Step 3: Check, fix, repeat
   python3 scripts/check_content.py sites/<domain>/content.json
@@ -99,9 +102,9 @@ run it again until it passes.
 
 ## Step 4: Deliver
   node scripts/build_doc.js sites/<domain>/content.json
-This makes `sites/<domain>/Site-Content-<domain>-<date>.docx`: page by page
-and section by section, each box with its type, Figma layer, the new text,
-its word count and the Figma count. Convert it to PDF and look at it before
+This makes `sites/<domain>/Site-Content-<domain>-<date>.docx`: plain reading
+copy, page by page and section by section, ready to paste into Figma.
+Use `--page "<name>"` for one page. Convert it to PDF and look at it before
 sending it. Commit figma.json, content.json and the .docx. Add the site to the
 "Site content" tab of the Website Ops Hub.
 

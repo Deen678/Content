@@ -34,26 +34,18 @@ const boxes = figma.boxes.filter(b => !b.repeat_of && (!pageArg || b.page.toLowe
 const children = [
   new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun(`Site content: ${content.site}`)] }),
   new Paragraph({ spacing: { after: 120 }, children: [t(`Written to the Figma design "${figma.figma_file || ''}"  ·  ${new Date().toISOString().slice(0, 10)}`, { color: MUTED })] }),
-  new Paragraph({ spacing: { after: 60 }, children: [t('Business: ', { bold: true, size: 22 }), t(content.business_model || '', { size: 22 })] }),
-  new Paragraph({ spacing: { after: 200 }, children: [t('Word counts: headings, buttons and labels match the design exactly; paragraphs are within 10%. Text that repeats across pages (menus, footer, shared buttons) is written once. Only text that changes is listed: each entry shows the new content, with the current design text underneath so it is clear what it replaces. Everything else on the page stays as designed. Words with a line through them are the struck-out "before" text the design shows.', { color: MUTED, size: 18 })] }),
 ];
-let lastPage = null, rows = [], lastSection = null;
-const flush = () => { if (rows.length) { children.push(new Table({ width: { size: 9026, type: WidthType.DXA }, columnWidths: W, rows }), new Paragraph({ spacing: { after: 160 }, children: [] })); rows = []; } };
+// Plain reading copy: each piece of text on its own line, in page order, ready to copy into Figma.
+// Headings and buttons in bold; everything else as normal text. No tables, types or counts.
+let lastPage = null, lastSection = null;
 for (const b of boxes) {
-  if (b.page !== lastPage) { flush(); children.push(new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore: lastPage !== null, children: [new TextRun(b.page)] })); lastPage = b.page; lastSection = null; }
-  if (b.section !== lastSection) { flush(); children.push(new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun(b.section)] }));
-    rows.push(new TableRow({ tableHeader: true, children: [cell([t('Type', { bold: true, color: MUTED, size: 16 })], W[0], { keep: true }), cell([t('New content (replaces the design text shown underneath)', { bold: true, color: MUTED, size: 16 })], W[1], { keep: true }), cell([t('Words', { bold: true, color: MUTED, size: 16 })], W[2], { right: true, keep: true })] }));
-    lastSection = b.section; }
-  const txt = text[b.id] || '(not written)'; const n = words(txt);
-  const isHead = b.role === 'heading'; const keep = kept.has(b.id);
-  rows.push(new TableRow({ cantSplit: true, children: [
-    cell([[t(ROLE[b.role] || b.role, { bold: true, size: 18, color: keep ? '9CA3AF' : undefined })], [t(keep ? 'keep as designed' : (b.layer || ''), { color: MUTED, size: 14, italics: keep })]], W[0], { fill: keep ? 'F7F7F8' : undefined }),
-    cell([...txt.split('\n').map(line => runsFor(line, { size: isHead ? 22 : 20, bold: isHead })),
-          [t('Replaces: ' + String(b.placeholder).replace(/\s+/g, ' '), { color: '9CA3AF', size: 15, italics: true })]], W[1]),
-    cell([[t(`${n}`, { bold: true, size: 18, color: keep ? '9CA3AF' : undefined })], [t(`Figma ${b.target_words}`, { color: MUTED, size: 14 })]], W[2], { right: true, fill: keep ? 'F7F7F8' : undefined }),
-  ] }));
+  if (b.page !== lastPage) { children.push(new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore: lastPage !== null, children: [new TextRun(b.page.charAt(0).toUpperCase() + b.page.slice(1))] })); lastPage = b.page; lastSection = null; }
+  if (b.section !== lastSection) { children.push(new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun(b.section.charAt(0).toUpperCase() + b.section.slice(1))] })); lastSection = b.section; }
+  const txt = text[b.id] || '(not written)';
+  const strong = b.role === 'heading' || b.role === 'button';
+  const lines = txt.split('\n');
+  lines.forEach((line, i) => children.push(new Paragraph({ spacing: { after: i === lines.length - 1 ? 200 : 0 }, children: runsFor(line, { size: b.role === 'heading' ? 24 : 21, bold: strong }) })));
 }
-flush();
 const doc = new Document({
   styles: { default: { document: { run: { font: F, size: 20 } } }, paragraphStyles: [
     { id: 'Title', name: 'Title', basedOn: 'Normal', run: { font: F, size: 40, bold: true, color: NAVY }, paragraph: { spacing: { before: 0, after: 60 }, keepNext: true } },
