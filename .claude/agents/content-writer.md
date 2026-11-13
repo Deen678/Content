@@ -75,6 +75,13 @@ Give one entry per box in figma.json that has no "repeat_of".
   document for the overview (mark `"keep": true, "show": true`): the hero
   headline, footer sign-off (e.g. "Say less."), handwritten-style margin
   notes and quips.
+- **Show what a heading is connected to:** when a rewritten heading or intro
+  belongs to a section whose main content is kept as designed (e.g. "The
+  jargon we delete, and what replaces it" sits next to the demo paragraph
+  with the struck-out words), also mark that kept content `"show": true` so it
+  appears in grey right under the heading in the document. Then the owner can
+  see what each piece of new text goes with. Don't show menus, prices,
+  service names or buttons this way.
 - **Buttons stay as designed** and are left out of the document.
 - **Text inside the design's illustrations stays as designed:** mock-up
   cards, demo paragraphs, before/after examples, counters and badges.
