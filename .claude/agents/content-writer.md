@@ -117,6 +117,12 @@ Give one entry per box in figma.json that has no "repeat_of".
 - **Connected content is shown with the design's styling:** kept text shown in
   grey keeps its struck-out words and red handwritten/italic inserts, so it
   reads like the design.
+- **Keep the names of what's shown:** if a heading or lead names one of the
+  business's services or the example the section shows (e.g. "A press
+  release, before and after" above a press release demo, and press releases
+  are a service), the new text must name it too. Reword around it; never
+  swap it for something else ("launch announcement"). Any fact about the
+  example must be true of it (e.g. 53 words to 31 is not "half").
 - **Keep the page order exactly as the design reads:** eyebrow, heading, then
   its lead; and each card or step as title followed by its own description
   (step 1 title, step 1 text, step 2 title…), never all titles then all
