@@ -64,7 +64,16 @@ def main():
         if not (lo <= n <= hi):
             want = f"{lo}" if lo == hi else f"{lo}-{hi}"
             problems.append(f"COUNT    {label}: {n} words, needs {want} ({kind}, Figma has {b['target_words']})"); continue
-        if LOREM.search(t) or re.search(r"\[[^\]]+\]|\bTBC\b", t): problems.append(f"PLACEHOLDER {label}: {t[:60]!r}"); continue
+        if b.get("role") == "heading" and bid not in keep:
+            new_lines = [len(words(l)) for l in t.split("\n")]
+            if len(b.get("lines", [1])) > 1 and new_lines != b["lines"]:
+                problems.append(f"LINES    {label}: lines have {new_lines} words, the design has {b['lines']} (keep the same line split)"); continue
+            acc = re.findall(r"\*([^*]+)\*", t)
+            if b.get("accent"):
+                want = [len(words(x)) for x in b["accent"]]
+                if [len(words(x)) for x in acc] != want:
+                    problems.append(f"ACCENT   {label}: mark the accent words with *…* ({want} words, like the design's '{' / '.join(b['accent'])}')"); continue
+                if LOREM.search(t) or re.search(r"\[[^\]]+\]|\bTBC\b", t): problems.append(f"PLACEHOLDER {label}: {t[:60]!r}"); continue
         if b["target_words"] >= 5 and grams(t, 5) & grams(b["placeholder"], 5): problems.append(f"COPIED   {label}: reuses the Figma placeholder wording"); continue
         ok += 1
     extra = set() if only_page else set(written) - set(boxes)

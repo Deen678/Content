@@ -100,6 +100,17 @@ Give one entry per box in figma.json that has no "repeat_of".
 - **Struck-out "before" text** that the design shows with a line through it:
   write it as `~~old words~~ new words`, keeping the design's numbers of old
   and new words.
+- **Headings keep the design's shape:** the same line breaks with the same
+  number of words on each line (write `\n`), and the words the design sets
+  apart in italic/colour (`accent` in figma.json, e.g. "before *and after*")
+  are marked `*like this*` with the same number of words. Cut the heading down
+  to fit; don't pad it. The checker enforces both, and the document shows the
+  accent in red italics so it reads like the design.
+- **Keep the page order exactly as the design reads:** eyebrow, heading, then
+  its lead; and each card or step as title followed by its own description
+  (step 1 title, step 1 text, step 2 title…), never all titles then all
+  texts. figma_extract groups text by its card/step frame to do this; if the
+  order still looks wrong against the design, fix it before delivering.
 - **The document is plain reading copy:** page and section names, then each
   piece of new text on its own line, in the order it appears on the page, so
   the owner can read it and copy-paste it straight into Figma. Headings and

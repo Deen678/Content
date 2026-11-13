@@ -25,6 +25,23 @@ def words(text):
     return len(re.findall(r"[A-Za-z0-9£$€%&@#'’\-]+(?:[.,][0-9]+)?", text or ""))
 
 
+def accents(node):
+    """Words the design sets apart in italic/colour (e.g. 'before and after' in red italics)."""
+    ch = node.get("characters") or ""; ov = node.get("characterStyleOverrides") or []; tbl = node.get("styleOverrideTable") or {}
+    parts, cur, buf = [], None, ""
+    for k, c in enumerate(ch):
+        sid = str(ov[k]) if k < len(ov) else "0"
+        st = tbl.get(sid, {}); acc = bool(st.get("italic") or "Italic" in str(st.get("fontStyle", "")))
+        if acc != cur:
+            if cur and buf.strip(): parts.append(buf.strip())
+            cur, buf = acc, c
+        else: buf += c
+    if cur and buf.strip(): parts.append(buf.strip())
+    base = (node.get("style") or {}); 
+    if not parts and (base.get("italic") or "Italic" in str(base.get("fontStyle", ""))): return []  # whole box italic: not an accent
+    return parts
+
+
 def role_of(node, parents):
     name = (node.get("name") or "").lower()
     chain = " / ".join(p.get("name", "") for p in parents).lower()
@@ -43,8 +60,12 @@ def role_of(node, parents):
 PAGE_ORDER = {}
 
 
-def walk(node, parents, out, page, section):
+def walk(node, parents, out, page, section, group=None):
     if node.get("visible") is False: return
+    if len(parents) >= 2 and node.get("type") in ("FRAME", "INSTANCE", "COMPONENT", "GROUP") and node.get("type") != "TEXT":
+        bb = node.get("absoluteBoundingBox") or {}
+        kids_text = [c for c in node.get("children", []) or [] if c.get("type") == "TEXT"]
+        if len(kids_text) >= 2: group = (node.get("name"), bb.get("y", 0), bb.get("x", 0))  # a card/step holding a title + text
     t = node.get("type")
     if t in ("FRAME", "SECTION", "COMPONENT", "INSTANCE", "GROUP") and len(parents) == 1: section = node.get("name")  # top-level frame on the page = section / screen
     if t == "TEXT":
@@ -55,12 +76,14 @@ def walk(node, parents, out, page, section):
                 "id": node.get("id"), "page": page, "page_order": PAGE_ORDER.get(page, 0), "section": section or "(no frame)",
                 "layer": node.get("name"), "path": " / ".join(p.get("name", "") for p in parents[1:]),
                 "role": role_of(node, parents), "placeholder": text, "target_words": words(text),
+                "lines": [words(l) for l in text.split("\n")], "accent": accents(node),
+                "group": group[0] if group else None, "group_y": group[1] if group else box.get("y", 0), "group_x": group[2] if group else box.get("x", 0),
                 "font_size": (node.get("style") or {}).get("fontSize"),
                 "y": box.get("y", 0), "x": box.get("x", 0),
             })
         return
     for c in node.get("children", []) or []:
-        walk(c, parents + [node], out, page, section)
+        walk(c, parents + [node], out, page, section, group)
 
 
 def main():
@@ -81,7 +104,8 @@ def main():
         PAGE_ORDER[page.get("name")] = i
         if a.page and page.get("name", "").strip().lower() != a.page.strip().lower(): continue
         walk(page, [], boxes, page.get("name"), None)
-    boxes.sort(key=lambda b: (b["page_order"], round(b["y"] / 8), b["x"]))  # Figma's page order, then top to bottom
+    # Figma's page order, then top to bottom; text inside the same card stays together (title, then its description).
+    boxes.sort(key=lambda b: (b["page_order"], round(b["group_y"] / 8), b["group_x"], round(b["y"] / 8), b["x"]))
     # Text repeated on several frames (menus, footers, buttons) is written once.
     seen = {}
     for b in boxes:

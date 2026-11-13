@@ -17,8 +17,10 @@ const text = Object.fromEntries(content.boxes.map(b => [b.id, b.text]));
 const kept = new Set(content.boxes.filter(b => b.keep).map(b => b.id));
 const shown = new Set(content.boxes.filter(b => b.keep && b.show).map(b => b.id));  // tone-setting lines kept as designed, shown in grey for the overview
 // "~~old~~ new" = struck-out words shown with a line through them (the design's edit effect).
-const runsFor = (line, o) => line.split(/(~~[^~]+~~)/).filter(Boolean).map(seg => seg.startsWith('~~')
+const ACCENT = 'C8102E';  // red italic accent words, as in the design
+const runsFor = (line, o) => line.split(/(~~[^~]+~~|\*[^*]+\*)/).filter(Boolean).map(seg => seg.startsWith('~~')
   ? new TextRun({ text: seg.slice(2, -2), font: F, size: o.size, strike: true, color: '9CA3AF' })
+  : seg.startsWith('*') ? new TextRun({ text: seg.slice(1, -1), font: F, size: o.size, bold: o.bold, italics: true, color: o.color || ACCENT })
   : new TextRun({ text: seg, font: F, size: o.size, bold: o.bold, color: o.color, italics: o.italics }));
 const words = t => (String(t || '').match(/[A-Za-z0-9£$€%&@#'’\-]+(?:[.,][0-9]+)?/g) || []).length;
 const F = 'Arial', NAVY = '1F3864', MUTED = '6B7280';
@@ -43,11 +45,14 @@ let lastPage = null, lastSection = null;
 for (const b of boxes) {
   if (b.page !== lastPage) { children.push(new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore: lastPage !== null, children: [new TextRun(b.page.charAt(0).toUpperCase() + b.page.slice(1))] })); lastPage = b.page; lastSection = null; }
   if (b.section !== lastSection) { children.push(new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun(b.section.charAt(0).toUpperCase() + b.section.slice(1))] })); lastSection = b.section; }
-  const txt = text[b.id] || '(not written)';
+  let txt = text[b.id] || '(not written)';
+  if (kept.has(b.id) && !txt.includes('*')) for (const w of (b.accent || [])) txt = txt.replace(w, `*${w}*`);  // kept lines keep the design's italic accent
   const strong = b.role === 'heading' || b.role === 'button';
   const lines = txt.split('\n');
   const grey = shown.has(b.id);
-  lines.forEach((line, i) => children.push(new Paragraph({ spacing: { after: i === lines.length - 1 ? 200 : 0 }, children: runsFor(line, { size: b.role === 'heading' ? 24 : 21, bold: strong, color: grey ? '9CA3AF' : undefined }) })));
+  const o = { size: b.role === 'heading' ? 24 : 21, bold: strong, color: grey ? '9CA3AF' : undefined };
+  const runs = []; lines.forEach((line, i) => { if (i) runs.push(new TextRun({ break: 1 })); runs.push(...runsFor(line, o)); });
+  children.push(new Paragraph({ spacing: { after: 200 }, keepNext: b.role === 'heading', children: runs }));
 }
 const doc = new Document({
   styles: { default: { document: { run: { font: F, size: 20 } } }, paragraphStyles: [
