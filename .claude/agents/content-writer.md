@@ -63,6 +63,28 @@ Give one entry per box in figma.json that has no "repeat_of".
     [brackets], no TBC
   - consistent spelling (UK or US, as the owner says)
 
+## The owner's standing preferences
+- **Tone: professional, not casual.** Even for a young audience, write clearly
+  and plainly. No slang or chat-speak: never "DM us", "period", "no cap",
+  "vibes" and the like. A little warmth is fine. Gimmicks are not.
+- **Keep as designed** (mark `"keep": true` in content.json, text identical
+  to the design):
+  - the menu, footer links and headings, and the copyright line
+  - currency codes, basket and log-in links
+  - form field labels
+  - UI hints and status tags
+  - **small section labels/eyebrows** (e.g. "the edit", "contents", "join us")
+  - service names, prices and plan or grade names and rates
+  - "We take [card logos]" style labels
+- **Numbers printed on the page:** if the design shows a word or line count
+  (e.g. "35 words to 16", "53 words"), the boxes it describes must hit that
+  count exactly (mark `"exact": true`), so the number stays true.
+- **Struck-out "before" text** that the design shows with a line through it:
+  write it as `~~old words~~ new words`, keeping the design's numbers of old
+  and new words.
+- **The document lists only what changes:** each box's new content, with the
+  current design text underneath as "Replaces: …". Kept text is left out.
+
 ## Step 3: Check, fix, repeat
   python3 scripts/check_content.py sites/<domain>/content.json
 It fails if:

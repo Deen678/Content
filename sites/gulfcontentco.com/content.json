@@ -77,7 +77,7 @@
   },
   {
    "id": "12152:189",
-   "text": "Cut the fluff, keep you."
+   "text": "Clear writing, without the filler."
   },
   {
    "id": "12152:225",
@@ -99,7 +99,7 @@
   },
   {
    "id": "12152:190",
-   "text": "Captions, blogs, product pages and scripts from writers who cut before they hand anything over. You get words that sound like you on a good day."
+   "text": "Captions, blogs, product pages and scripts from writers who edit their own work before you see it. You get words that sound like you, only sharper."
   },
   {
    "id": "12152:231",
@@ -107,7 +107,7 @@
   },
   {
    "id": "12152:232",
-   "text": "Tell us what. We'll write it."
+   "text": "Send the brief, and we'll write."
   },
   {
    "id": "12152:193",
@@ -163,11 +163,12 @@
   },
   {
    "id": "12152:248",
-   "text": "red pen"
+   "text": "the edit",
+   "keep": true
   },
   {
    "id": "12152:255",
-   "text": "~~In an ever evolving content ecosystem, our award winning creative collective harnesses~~ We make ~~cutting edge, data driven storytelling experiences~~ posts ~~designed to inspire next generation audiences and~~ people actually read ~~elevate brand awareness while fostering authentic community connection.~~ and share. ~~Get in touch to explore our bespoke content packages today.~~ DM us.",
+   "text": "~~In an ever evolving content ecosystem, our award winning creative collective harnesses~~ We make ~~cutting edge, data driven storytelling experiences~~ posts ~~designed to inspire next generation audiences and~~ people actually read ~~elevate brand awareness while fostering authentic community connection.~~ and share. ~~Get in touch to explore our bespoke content packages today.~~ Contact us.",
    "exact": true
   },
   {
@@ -186,7 +187,8 @@
   },
   {
    "id": "12152:259",
-   "text": "menu"
+   "text": "contents",
+   "keep": true
   },
   {
    "id": "12152:260",
@@ -198,7 +200,7 @@
   },
   {
    "id": "12152:264",
-   "text": "pay per piece, period"
+   "text": "one price per piece"
   },
   {
    "id": "12152:268",
@@ -412,7 +414,8 @@
   },
   {
    "id": "12152:444",
-   "text": "who writes"
+   "text": "writer grades",
+   "keep": true
   },
   {
    "id": "12152:445",
@@ -478,7 +481,8 @@
   },
   {
    "id": "12152:505",
-   "text": "a quick case study"
+   "text": "one we did earlier",
+   "keep": true
   },
   {
    "id": "12152:506",
@@ -486,7 +490,7 @@
   },
   {
    "id": "12152:507",
-   "text": "A made up product launch, first written the usual way, then rewritten how we would ship it. Same story, half the scrolling."
+   "text": "A made up product launch, first written the usual way, then rewritten as we would send it. The same story in half the words."
   },
   {
    "id": "12152:512",
@@ -520,7 +524,8 @@
   },
   {
    "id": "12152:522",
-   "text": "the process"
+   "text": "the order",
+   "keep": true
   },
   {
    "id": "12152:524",
@@ -560,15 +565,16 @@
   },
   {
    "id": "12152:549",
-   "text": "Your draft hits your account. Two rounds of edits are on us, then the files are yours."
+   "text": "Your draft arrives in your account. Two rounds of edits are included, then the files are yours."
   },
   {
    "id": "12152:562",
-   "text": "Has to love cutting their sentences."
+   "text": "Should like trimming their own writing."
   },
   {
    "id": "12152:556",
-   "text": "now hiring"
+   "text": "join us",
+   "keep": true
   },
   {
    "id": "12152:557",
@@ -584,7 +590,7 @@
   },
   {
    "id": "I12152:637;12152:67",
-   "text": "Less, better."
+   "text": "Write clearly."
   },
   {
    "id": "I12152:637;12152:77",
