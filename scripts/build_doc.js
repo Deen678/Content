@@ -15,6 +15,7 @@ const figma = JSON.parse(fs.readFileSync(path.join(dir, 'figma.json'), 'utf8'));
 const out = pos[1] || path.join(dir, `Site-Content-${content.site}-${new Date().toISOString().slice(0, 10)}.docx`);
 const text = Object.fromEntries(content.boxes.map(b => [b.id, b.text]));
 const kept = new Set(content.boxes.filter(b => b.keep).map(b => b.id));
+const shown = new Set(content.boxes.filter(b => b.keep && b.show).map(b => b.id));  // tone-setting lines kept as designed, shown in grey for the overview
 // "~~old~~ new" = struck-out words shown with a line through them (the design's edit effect).
 const runsFor = (line, o) => line.split(/(~~[^~]+~~)/).filter(Boolean).map(seg => seg.startsWith('~~')
   ? new TextRun({ text: seg.slice(2, -2), font: F, size: o.size, strike: true, color: '9CA3AF' })
@@ -30,10 +31,11 @@ const cell = (runs, w, o = {}) => new TableCell({ width: { size: w, type: WidthT
 const ROLE = { heading: 'Heading', paragraph: 'Paragraph', button: 'Button', label: 'Label' };
 
 // Only the boxes whose text is being replaced; anything kept as designed is left out.
-const boxes = figma.boxes.filter(b => !b.repeat_of && (!pageArg || b.page.toLowerCase() === pageArg) && !kept.has(b.id));
+const boxes = figma.boxes.filter(b => !b.repeat_of && (!pageArg || b.page.toLowerCase() === pageArg) && (!kept.has(b.id) || shown.has(b.id)));
 const children = [
   new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun(`Site content: ${content.site}`)] }),
   new Paragraph({ spacing: { after: 120 }, children: [t(`Written to the Figma design "${figma.figma_file || ''}"  ·  ${new Date().toISOString().slice(0, 10)}`, { color: MUTED })] }),
+  ...(shown.size ? [new Paragraph({ spacing: { after: 200 }, children: [t('Black text is new: paste it into the matching Figma box. Grey text is unchanged from the design and is only here so the page reads as a whole.', { color: MUTED, size: 18 })] })] : []),
 ];
 // Plain reading copy: each piece of text on its own line, in page order, ready to copy into Figma.
 // Headings and buttons in bold; everything else as normal text. No tables, types or counts.
@@ -44,7 +46,8 @@ for (const b of boxes) {
   const txt = text[b.id] || '(not written)';
   const strong = b.role === 'heading' || b.role === 'button';
   const lines = txt.split('\n');
-  lines.forEach((line, i) => children.push(new Paragraph({ spacing: { after: i === lines.length - 1 ? 200 : 0 }, children: runsFor(line, { size: b.role === 'heading' ? 24 : 21, bold: strong }) })));
+  const grey = shown.has(b.id);
+  lines.forEach((line, i) => children.push(new Paragraph({ spacing: { after: i === lines.length - 1 ? 200 : 0 }, children: runsFor(line, { size: b.role === 'heading' ? 24 : 21, bold: strong, color: grey ? '9CA3AF' : undefined }) })));
 }
 const doc = new Document({
   styles: { default: { document: { run: { font: F, size: 20 } } }, paragraphStyles: [

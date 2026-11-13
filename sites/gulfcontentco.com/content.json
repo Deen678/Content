@@ -69,15 +69,19 @@
   },
   {
    "id": "12152:153",
-   "text": "sound human"
+   "text": "do more",
+   "keep": true
   },
   {
    "id": "12152:152",
-   "text": "elevate your brand narrative"
+   "text": "unlock your full potential",
+   "keep": true
   },
   {
    "id": "12152:189",
-   "text": "Clear writing, without the filler."
+   "text": "We take the\nwaffle out.",
+   "keep": true,
+   "show": true
   },
   {
    "id": "12152:225",
@@ -91,11 +95,13 @@
   },
   {
    "id": "12152:228",
-   "text": "As a results driven agency, we harness cutting edge strategies to amplify your digital presence."
+   "text": "We are a leading provider of innovative, end to end solutions for forward thinking businesses.",
+   "keep": true
   },
   {
    "id": "12152:229",
-   "text": "We write your Instagram captions."
+   "text": "We fix office Wi-Fi. Properly.",
+   "keep": true
   },
   {
    "id": "12152:190",
@@ -103,27 +109,33 @@
   },
   {
    "id": "12152:231",
-   "text": "Our dedicated experts curate impactful narratives that resonate across every single touchpoint."
+   "text": "Our passionate team leverages synergies to deliver best in class customer experiences.",
+   "keep": true
   },
   {
    "id": "12152:232",
-   "text": "Send the brief, and we'll write."
+   "text": "Ask for help. We'll sort it.",
+   "keep": true
   },
   {
    "id": "12152:193",
-   "text": "Order copy"
+   "text": "Order content",
+   "keep": true
   },
   {
    "id": "12152:195",
-   "text": "Write for us"
+   "text": "Write with us",
+   "keep": true
   },
   {
    "id": "12152:234",
-   "text": "Connect with us today to begin your journey."
+   "text": "Reach out today to unlock your full potential.",
+   "keep": true
   },
   {
    "id": "12152:235",
-   "text": "Message us. We reply fast."
+   "text": "Call us. We pick up.",
+   "keep": true
   },
   {
    "id": "12152:198",
@@ -142,19 +154,23 @@
   },
   {
    "id": "12152:156",
-   "text": "skill"
+   "text": "good",
+   "keep": true
   },
   {
    "id": "12152:155",
-   "text": "industry leading expertise"
+   "text": "best in class",
+   "keep": true
   },
   {
    "id": "12152:159",
-   "text": "posts that actually get read"
+   "text": "we do all of it",
+   "keep": true
   },
   {
    "id": "12152:158",
-   "text": "seamless omnichannel content ecosystem"
+   "text": "end to end solutions",
+   "keep": true
   },
   {
    "id": "12152:242",
@@ -168,8 +184,8 @@
   },
   {
    "id": "12152:255",
-   "text": "~~In an ever evolving content ecosystem, our award winning creative collective harnesses~~ We make ~~cutting edge, data driven storytelling experiences~~ posts ~~designed to inspire next generation audiences and~~ people actually read ~~elevate brand awareness while fostering authentic community connection.~~ and share. ~~Get in touch to explore our bespoke content packages today.~~ Contact us.",
-   "exact": true
+   "text": "In today's fast paced digital landscape, our passionate team of wordsmiths leverages We write best in class, end to end content solutions copy that empower forward thinking brands to that helps you unlock their full potential and drive meaningful engagement. sell more. Reach out today to start your journey with us. Email us.",
+   "keep": true
   },
   {
    "id": "12152:249",
@@ -200,7 +216,9 @@
   },
   {
    "id": "12152:264",
-   "text": "one price per piece"
+   "text": "priced by the piece",
+   "keep": true,
+   "show": true
   },
   {
    "id": "12152:268",
@@ -419,7 +437,7 @@
   },
   {
    "id": "12152:445",
-   "text": "Pick your writer, every draft gets edited"
+   "text": "Pick the writer. The edit is standard."
   },
   {
    "id": "12152:446",
@@ -469,15 +487,18 @@
   },
   {
    "id": "12152:483",
-   "text": "Double edited"
+   "text": "Edited twice",
+   "keep": true
   },
   {
    "id": "12152:501",
-   "text": "Fact-checked"
+   "text": "Sourced",
+   "keep": true
   },
   {
    "id": "12152:465",
-   "text": "Proofread"
+   "text": "Checked",
+   "keep": true
   },
   {
    "id": "12152:505",
@@ -514,13 +535,13 @@
   },
   {
    "id": "12152:513",
-   "text": "Manama, Bahrain. Saltwater Coffee House, a pioneering force in the specialty coffee scene, is excited to unveil its game changing, all new, seamless mobile ordering experience, crafted to empower coffee lovers of every kind to effortlessly elevate their daily ritual, delivering truly unmatched convenience and unforgettable moments in today's busy, always on world.",
-   "exact": true
+   "text": "Dubai, UAE. Harbour Logistics, a leading innovator in the logistics space, is thrilled to announce the launch of its revolutionary next generation tracking platform, designed to empower businesses of all sizes to seamlessly unlock end to end visibility across their entire supply chain journey, delivering unparalleled value in today's fast moving global marketplace.",
+   "keep": true
   },
   {
    "id": "12152:518",
-   "text": "Manama, Bahrain. From December 15, Saltwater Coffee House customers can order ahead in the app and skip the line at all six branches. Pickup takes under two minutes at the counter.",
-   "exact": true
+   "text": "Dubai, UAE. Harbour Logistics now shows customers where every container is, by the hour, from the port to their door. The tracking platform goes live for all customers on 2 November.",
+   "keep": true
   },
   {
    "id": "12152:522",
@@ -569,7 +590,9 @@
   },
   {
    "id": "12152:562",
-   "text": "Should like trimming their own writing."
+   "text": "Must enjoy deleting their own sentences.",
+   "keep": true,
+   "show": true
   },
   {
    "id": "12152:556",
@@ -586,11 +609,14 @@
   },
   {
    "id": "12152:560",
-   "text": "Send your samples"
+   "text": "Apply to write",
+   "keep": true
   },
   {
    "id": "I12152:637;12152:67",
-   "text": "Write clearly."
+   "text": "Say less.",
+   "keep": true,
+   "show": true
   },
   {
    "id": "I12152:637;12152:77",

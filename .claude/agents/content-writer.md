@@ -67,6 +67,17 @@ Give one entry per box in figma.json that has no "repeat_of".
 - **Tone: professional, not casual.** Even for a young audience, write clearly
   and plainly. No slang or chat-speak: never "DM us", "period", "no cap",
   "vibes" and the like. A little warmth is fine. Gimmicks are not.
+- **Only the main text is rewritten:** section headings, intro/lead
+  paragraphs, descriptions, steps and similar body copy.
+- **Tone:** match the design's own voice (e.g. "We take the waffle out.":
+  dry, confident, plain, a little witty), never slangy.
+- **Tone-setting lines stay as designed** and are shown in grey in the
+  document for the overview (mark `"keep": true, "show": true`): the hero
+  headline, footer sign-off (e.g. "Say less."), handwritten-style margin
+  notes and quips.
+- **Buttons stay as designed** and are left out of the document.
+- **Text inside the design's illustrations stays as designed:** mock-up
+  cards, demo paragraphs, before/after examples, counters and badges.
 - **Keep as designed** (mark `"keep": true` in content.json, text identical
   to the design):
   - the menu, footer links and headings, and the copyright line
