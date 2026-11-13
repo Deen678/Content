@@ -106,6 +106,17 @@ Give one entry per box in figma.json that has no "repeat_of".
   are marked `*like this*` with the same number of words. Cut the heading down
   to fit; don't pad it. The checker enforces both, and the document shows the
   accent in red italics so it reads like the design.
+- **Headings must wrap like the design:** a heading box has a fixed width,
+  so the design's lines often come from wrapping, not typed line breaks
+  (e.g. "What we cut, / and what we / *write instead*"). figma.json's
+  `wrapped` shows how the design's text wraps, measured with the real font
+  (scripts/textfit.py fetches it from Google Fonts). New text must fill the
+  same number of lines, with the accent on its own last line when the design
+  does that. The checker measures it (WRAP), and the document shows the
+  heading broken where the box will wrap it.
+- **Connected content is shown with the design's styling:** kept text shown in
+  grey keeps its struck-out words and red handwritten/italic inserts, so it
+  reads like the design.
 - **Keep the page order exactly as the design reads:** eyebrow, heading, then
   its lead; and each card or step as title followed by its own description
   (step 1 title, step 1 text, step 2 title…), never all titles then all

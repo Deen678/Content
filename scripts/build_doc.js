@@ -20,8 +20,10 @@ const shown = new Set(content.boxes.filter(b => b.keep && b.show).map(b => b.id)
 const ACCENT = 'C8102E';  // red italic accent words, as in the design
 const runsFor = (line, o) => line.split(/(~~[^~]+~~|\*[^*]+\*)/).filter(Boolean).map(seg => seg.startsWith('~~')
   ? new TextRun({ text: seg.slice(2, -2), font: F, size: o.size, strike: true, color: '9CA3AF' })
-  : seg.startsWith('*') ? new TextRun({ text: seg.slice(1, -1), font: F, size: o.size, bold: o.bold, italics: true, color: o.color || ACCENT })
+  : seg.startsWith('*') ? new TextRun({ text: seg.slice(1, -1), font: F, size: o.size, bold: o.bold, italics: true, color: ACCENT })
   : new TextRun({ text: seg, font: F, size: o.size, bold: o.bold, color: o.color, italics: o.italics }));
+// Headings are shown broken where the design's box wraps them (worked out by scripts/textfit.py).
+const wrapped = (() => { try { return JSON.parse(require('child_process').execFileSync('python3', [path.join(__dirname, 'wrap_all.py'), contentPath]).toString()); } catch (e) { return {}; } })();
 const words = t => (String(t || '').match(/[A-Za-z0-9£$€%&@#'’\-]+(?:[.,][0-9]+)?/g) || []).length;
 const F = 'Arial', NAVY = '1F3864', MUTED = '6B7280';
 const t = (s, o = {}) => new TextRun({ text: s, font: F, size: o.size || 20, bold: o.bold, color: o.color, italics: o.italics });
@@ -46,9 +48,9 @@ for (const b of boxes) {
   if (b.page !== lastPage) { children.push(new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore: lastPage !== null, children: [new TextRun(b.page.charAt(0).toUpperCase() + b.page.slice(1))] })); lastPage = b.page; lastSection = null; }
   if (b.section !== lastSection) { children.push(new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun(b.section.charAt(0).toUpperCase() + b.section.slice(1))] })); lastSection = b.section; }
   let txt = text[b.id] || '(not written)';
-  if (kept.has(b.id) && !txt.includes('*')) for (const w of (b.accent || [])) txt = txt.replace(w, `*${w}*`);  // kept lines keep the design's italic accent
+  if (kept.has(b.id) && b.marked) txt = b.marked;  // kept text shows the design's own styling: struck words, italic/handwritten accents
   const strong = b.role === 'heading' || b.role === 'button';
-  const lines = txt.split('\n');
+  const lines = (b.role === 'heading' && wrapped[b.id]) ? wrapped[b.id] : txt.split('\n');
   const grey = shown.has(b.id);
   const o = { size: b.role === 'heading' ? 24 : 21, bold: strong, color: grey ? '9CA3AF' : undefined };
   const runs = []; lines.forEach((line, i) => { if (i) runs.push(new TextRun({ break: 1 })); runs.push(...runsFor(line, o)); });

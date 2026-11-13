@@ -16,6 +16,9 @@ Rules (the owner's):
   - No [brackets], TBC, lorem ipsum or empty boxes.
 Exit code 1 if anything fails, with a list of what to fix.
 """
+import sys, os
+sys.path.insert(0, os.path.dirname(__file__))
+from textfit import wrap
 import glob, json, math, os, re, sys
 
 LOREM = re.compile(r"\b(lorem|ipsum|dolor sit|consectetur|adipiscing)\b", re.I)
@@ -68,6 +71,13 @@ def main():
             new_lines = [len(words(l)) for l in t.split("\n")]
             if len(b.get("lines", [1])) > 1 and new_lines != b["lines"]:
                 problems.append(f"LINES    {label}: lines have {new_lines} words, the design has {b['lines']} (keep the same line split)"); continue
+            if b.get("wrapped") and len(b["wrapped"]) > len(b.get("lines", [1])):
+                got = wrap(t, b["font_family"], b["font_size"], b["box_w"])
+                if got and len(got) != len(b["wrapped"]):
+                    problems.append(f"WRAP     {label}: shows on {len(got)} lines in the box ({' / '.join(got)}); the design fills {len(b['wrapped'])} ({' / '.join(b['wrapped'])})"); continue
+                acc_line = [l for l in b["wrapped"] if b.get("accent") and l == b["accent"][-1].replace("\xa0", " ")]
+                if got and acc_line and re.findall(r"\*([^*]+)\*", t) and got[-1] != re.findall(r"\*([^*]+)\*", t)[-1]:
+                    problems.append(f"WRAP     {label}: the accent words should sit on their own last line, as in the design ({' / '.join(got)})"); continue
             acc = re.findall(r"\*([^*]+)\*", t)
             if b.get("accent"):
                 want = [len(words(x)) for x in b["accent"]]

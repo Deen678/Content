@@ -12,6 +12,8 @@ secure credential form), so it is never written in this file or in chat.
 """
 import argparse, json, os, re, sys
 import requests
+sys.path.insert(0, os.path.dirname(__file__))
+from textfit import wrap
 
 API = "https://api.figma.com/v1"
 
@@ -40,6 +42,28 @@ def accents(node):
     base = (node.get("style") or {}); 
     if not parts and (base.get("italic") or "Italic" in str(base.get("fontStyle", ""))): return []  # whole box italic: not an accent
     return parts
+
+
+def marked(node):
+    """The design's text with its styling marked: ~~struck-through words~~ and *accent words* (italic or a different font, e.g. handwritten inserts)."""
+    ch = node.get("characters") or ""; ov = node.get("characterStyleOverrides") or []; tbl = node.get("styleOverrideTable") or {}
+    base = node.get("style") or {}
+    def kind(k):
+        st = tbl.get(str(ov[k]) if k < len(ov) else "0", {})
+        if st.get("textDecoration") == "STRIKETHROUGH": return "~~"
+        if st.get("italic") or "Italic" in str(st.get("fontStyle", "")) or (st.get("fontFamily") and st.get("fontFamily") != base.get("fontFamily")): return "*"
+        return ""
+    out, cur, buf = [], None, ""
+    def flush():
+        if not buf: return
+        core = buf.strip(); lead = buf[:len(buf) - len(buf.lstrip())]; trail = buf[len(buf.rstrip()):]
+        out.append(lead + (f"{cur}{core}{cur}" if cur and core else core) + trail)
+    for k, c in enumerate(ch):
+        kd = kind(k)
+        if kd != cur: flush(); cur, buf = kd, c
+        else: buf += c
+    flush()
+    return "".join(out)
 
 
 def role_of(node, parents):
@@ -76,9 +100,10 @@ def walk(node, parents, out, page, section, group=None):
                 "id": node.get("id"), "page": page, "page_order": PAGE_ORDER.get(page, 0), "section": section or "(no frame)",
                 "layer": node.get("name"), "path": " / ".join(p.get("name", "") for p in parents[1:]),
                 "role": role_of(node, parents), "placeholder": text, "target_words": words(text),
-                "lines": [words(l) for l in text.split("\n")], "accent": accents(node),
+                "lines": [words(l) for l in text.split("\n")], "accent": accents(node), "marked": marked(node).strip(),
                 "group": group[0] if group else None, "group_y": group[1] if group else box.get("y", 0), "group_x": group[2] if group else box.get("x", 0),
-                "font_size": (node.get("style") or {}).get("fontSize"),
+                "font_size": (node.get("style") or {}).get("fontSize"), "font_family": (node.get("style") or {}).get("fontFamily"),
+                "box_w": box.get("width") if (node.get("style") or {}).get("textAutoResize") != "WIDTH_AND_HEIGHT" else None,
                 "y": box.get("y", 0), "x": box.get("x", 0),
             })
         return
@@ -106,6 +131,13 @@ def main():
         walk(page, [], boxes, page.get("name"), None)
     # Figma's page order, then top to bottom; text inside the same card stays together (title, then its description).
     boxes.sort(key=lambda b: (b["page_order"], round(b["group_y"] / 8), b["group_x"], round(b["y"] / 8), b["x"]))
+    # How each heading wraps in its box (same font, size and width), so new text can be held to the same shape.
+    for b in boxes:
+        b["wrapped"] = None
+        if b["role"] == "heading" and b["box_w"] and b["font_family"] and b["font_size"]:
+            marked = b["placeholder"]
+            for w in b["accent"]: marked = marked.replace(w, f"*{w}*", 1)
+            b["wrapped"] = wrap(marked, b["font_family"], b["font_size"], b["box_w"])
     # Text repeated on several frames (menus, footers, buttons) is written once.
     seen = {}
     for b in boxes:
