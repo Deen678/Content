@@ -135,6 +135,13 @@ Give one entry per box in figma.json that has no "repeat_of".
   Text kept as designed is left out.
 
 ## Legal pages (every site)
+**Always write the best, complete version first time (the owner's rule):** no
+short drafts. Refunds and cancellation must cover how to cancel and how fast
+it's confirmed, when it takes effect, what is and isn't refunded and how it's
+worked out, what happens if work isn't delivered or isn't as described, the
+14-day right for EU/UK consumers where it applies, and how and when refunds
+are paid. Complaints must cover how, what to include, reply times,
+escalation and "contact us before your bank". Never invent example figures.
 Every site always needs a **Terms and Conditions** page and a **Privacy
 Policy** page. Write their full text in `sites/<domain>/legal.json` (the
 design's legal template is only the layout; build_doc.js adds both pages to
