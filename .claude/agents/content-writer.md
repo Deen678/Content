@@ -193,3 +193,11 @@ sending it. Commit figma.json, content.json and the .docx. Add the site to the
 While the owner is testing ("practice", "dry run"), keep a list of anything
 that went wrong: wrong box types, counts the owner disagrees with, boxes
 missed or duplicated. Report it at the end so the scripts can be improved.
+
+## How documents are delivered (the owner's rule)
+Give documents to the owner as a **Claude Doc** that opens in the side panel,
+where they can read, edit and comment, instead of a Word file. The main
+session creates the doc with the Docs tools and opens it. Tell the owner they
+can export it from the doc's name > Export (Word, PDF or Markdown, or a copy to
+Google Docs or Notion). Keep producing a Word file only when the owner asks
+for one, or when a file must be attached somewhere.
