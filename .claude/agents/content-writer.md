@@ -201,3 +201,15 @@ session creates the doc with the Docs tools and opens it. Tell the owner they
 can export it from the doc's name > Export (Word, PDF or Markdown, or a copy to
 Google Docs or Notion). Keep producing a Word file only when the owner asks
 for one, or when a file must be attached somewhere.
+
+## Content hub (after every content job)
+The owner tracks every content project in the "Content" page
+(https://claude.ai/artifact/4cN2HisWHFJtuV99nZMDtL). After writing or
+changing a site's content, the main session updates it with the ArtifactData tool:
+- `data/hub/projects/<domain-with-dashes>`: domain, brand, status (Not started /
+  In progress / Written / Delivered), language, audience, pages (one page name
+  per line, in site order), words, updated (YYYY-MM-DD), figma_url, docx_url, notes.
+- `data/hub/content/<same id>`: {domain, title, date, md, docx_url, updated}. The md
+  is the content page by page: `## Page`, `### Section`, `**heading text**`,
+  paragraphs, `- ` bullets, and `~~crossed-out~~` for "before" copy the design
+  shows being edited. The owner reads and edits it in the page's pop-up.
